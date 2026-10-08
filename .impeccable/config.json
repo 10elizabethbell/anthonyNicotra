@@ -11,6 +11,60 @@
         ],
         "createdAt": "2026-10-08T21:38:47.394Z",
         "reason": "Claude: job photo src is assigned lazily from an inline data block per pitch-site build-notes (single-file weight recipe)"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "8px",
+        "createdAt": "2026-10-08T21:50:41.390Z",
+        "reason": "Claude: shipped one-off in the built page, deliberately not canonized by the DESIGN.md documenter (focus ring, fallbacks, minor text steps); Ellie tunes next"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "13px",
+        "createdAt": "2026-10-08T21:50:41.454Z",
+        "reason": "Claude: shipped one-off in the built page, deliberately not canonized by the DESIGN.md documenter (focus ring, fallbacks, minor text steps); Ellie tunes next"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "15px",
+        "createdAt": "2026-10-08T21:50:41.519Z",
+        "reason": "Claude: shipped one-off in the built page, deliberately not canonized by the DESIGN.md documenter (focus ring, fallbacks, minor text steps); Ellie tunes next"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "18px",
+        "createdAt": "2026-10-08T21:50:41.583Z",
+        "reason": "Claude: shipped one-off in the built page, deliberately not canonized by the DESIGN.md documenter (focus ring, fallbacks, minor text steps); Ellie tunes next"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "19px",
+        "createdAt": "2026-10-08T21:50:41.652Z",
+        "reason": "Claude: shipped one-off in the built page, deliberately not canonized by the DESIGN.md documenter (focus ring, fallbacks, minor text steps); Ellie tunes next"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "24px",
+        "createdAt": "2026-10-08T21:50:41.720Z",
+        "reason": "Claude: shipped one-off in the built page, deliberately not canonized by the DESIGN.md documenter (focus ring, fallbacks, minor text steps); Ellie tunes next"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1.3rem",
+        "createdAt": "2026-10-08T21:50:41.786Z",
+        "reason": "Claude: shipped one-off in the built page, deliberately not canonized by the DESIGN.md documenter (focus ring, fallbacks, minor text steps); Ellie tunes next"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d9b47a",
+        "createdAt": "2026-10-08T21:50:41.852Z",
+        "reason": "Claude: shipped one-off in the built page, deliberately not canonized by the DESIGN.md documenter (focus ring, fallbacks, minor text steps); Ellie tunes next (pre-JS fallback color)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#cdb898",
+        "createdAt": "2026-10-08T21:50:41.917Z",
+        "reason": "Claude: shipped one-off in the built page, deliberately not canonized by the DESIGN.md documenter (focus ring, fallbacks, minor text steps); Ellie tunes next (pre-JS fallback color)"
       }
     ]
   }
