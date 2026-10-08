@@ -1,0 +1,524 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T21:49:55.644261+00:00",
+  "title": "Design System: Anthony Nicotra — Fencing & Home Contracting",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Evergreen Yard",
+        "canonical": "#1d3a31",
+        "oklch": "oklch(32.2% 0.039 171.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 171.7)",
+          "oklch(26.4% 0.036 171.7)",
+          "oklch(37.9% 0.036 171.7)",
+          "oklch(49.3% 0.031 171.7)",
+          "oklch(60.7% 0.026 171.7)",
+          "oklch(72.1% 0.020 171.7)",
+          "oklch(83.6% 0.015 171.7)",
+          "oklch(95.0% 0.010 171.7)"
+        ]
+      },
+      "ground-deep": {
+        "role": "neutral",
+        "displayName": "Deep Evergreen",
+        "canonical": "#152c25",
+        "oklch": "oklch(27.2% 0.032 172.2)",
+        "tonalRamp": [
+          "oklch(15.0% 0.028 172.2)",
+          "oklch(26.4% 0.032 172.2)",
+          "oklch(37.9% 0.028 172.2)",
+          "oklch(49.3% 0.024 172.2)",
+          "oklch(60.7% 0.019 172.2)",
+          "oklch(72.1% 0.015 172.2)",
+          "oklch(83.6% 0.010 172.2)",
+          "oklch(95.0% 0.008 172.2)"
+        ]
+      },
+      "ground-up": {
+        "role": "neutral",
+        "displayName": "Lifted Evergreen",
+        "canonical": "#24463b",
+        "oklch": "oklch(36.5% 0.045 170.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.033 170.8)",
+          "oklch(26.4% 0.039 170.8)",
+          "oklch(37.9% 0.044 170.8)",
+          "oklch(49.3% 0.038 170.8)",
+          "oklch(60.7% 0.032 170.8)",
+          "oklch(72.1% 0.025 170.8)",
+          "oklch(83.6% 0.019 170.8)",
+          "oklch(95.0% 0.013 170.8)"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Sawn Cream",
+        "canonical": "#f5ead6",
+        "oklch": "oklch(94.0% 0.029 82.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 82.6)",
+          "oklch(26.4% 0.007 82.6)",
+          "oklch(37.9% 0.009 82.6)",
+          "oklch(49.3% 0.013 82.6)",
+          "oklch(60.7% 0.017 82.6)",
+          "oklch(72.1% 0.021 82.6)",
+          "oklch(83.6% 0.025 82.6)",
+          "oklch(95.0% 0.029 82.6)"
+        ]
+      },
+      "cream-deep": {
+        "role": "neutral",
+        "displayName": "Sawdust Cream",
+        "canonical": "#ead9bb",
+        "oklch": "oklch(89.1% 0.044 81.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 81.9)",
+          "oklch(26.4% 0.011 81.9)",
+          "oklch(37.9% 0.017 81.9)",
+          "oklch(49.3% 0.023 81.9)",
+          "oklch(60.7% 0.029 81.9)",
+          "oklch(72.1% 0.035 81.9)",
+          "oklch(83.6% 0.041 81.9)",
+          "oklch(95.0% 0.041 81.9)"
+        ]
+      },
+      "pine": {
+        "role": "primary",
+        "displayName": "Fresh Pressure-Treated Pine",
+        "canonical": "#e6bf80",
+        "oklch": "oklch(82.5% 0.092 78.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.023 78.9)",
+          "oklch(26.4% 0.030 78.9)",
+          "oklch(37.9% 0.043 78.9)",
+          "oklch(49.3% 0.055 78.9)",
+          "oklch(60.7% 0.068 78.9)",
+          "oklch(72.1% 0.081 78.9)",
+          "oklch(83.6% 0.091 78.9)",
+          "oklch(95.0% 0.078 78.9)"
+        ]
+      },
+      "pine-hi": {
+        "role": "primary",
+        "displayName": "Sunlit Pine",
+        "canonical": "#f0d09a",
+        "oklch": "oklch(87.2% 0.078 80.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.020 80.4)",
+          "oklch(26.4% 0.021 80.4)",
+          "oklch(37.9% 0.032 80.4)",
+          "oklch(49.3% 0.043 80.4)",
+          "oklch(60.7% 0.053 80.4)",
+          "oklch(72.1% 0.064 80.4)",
+          "oklch(83.6% 0.075 80.4)",
+          "oklch(95.0% 0.071 80.4)"
+        ]
+      },
+      "pine-deep": {
+        "role": "primary",
+        "displayName": "Weathered Pine",
+        "canonical": "#b98a4e",
+        "oklch": "oklch(66.6% 0.096 71.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.037 71.6)",
+          "oklch(26.4% 0.050 71.6)",
+          "oklch(37.9% 0.063 71.6)",
+          "oklch(49.3% 0.076 71.6)",
+          "oklch(60.7% 0.089 71.6)",
+          "oklch(72.1% 0.090 71.6)",
+          "oklch(83.6% 0.077 71.6)",
+          "oklch(95.0% 0.064 71.6)"
+        ]
+      },
+      "pine-dark": {
+        "role": "primary",
+        "displayName": "Pine Heartwood",
+        "canonical": "#7a5530",
+        "oklch": "oklch(48.1% 0.072 64.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.043 64.7)",
+          "oklch(26.4% 0.053 64.7)",
+          "oklch(37.9% 0.063 64.7)",
+          "oklch(49.3% 0.071 64.7)",
+          "oklch(60.7% 0.061 64.7)",
+          "oklch(72.1% 0.051 64.7)",
+          "oklch(83.6% 0.041 64.7)",
+          "oklch(95.0% 0.031 64.7)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink Green",
+        "canonical": "#1c2a24",
+        "oklch": "oklch(27.0% 0.022 166.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.019 166.4)",
+          "oklch(26.4% 0.022 166.4)",
+          "oklch(37.9% 0.019 166.4)",
+          "oklch(49.3% 0.016 166.4)",
+          "oklch(60.7% 0.013 166.4)",
+          "oklch(72.1% 0.010 166.4)",
+          "oklch(83.6% 0.007 166.4)",
+          "oklch(95.0% 0.006 166.4)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Moss Ink",
+        "canonical": "#4a5a50",
+        "oklch": "oklch(45.1% 0.026 157.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.016 157.8)",
+          "oklch(26.4% 0.020 157.8)",
+          "oklch(37.9% 0.023 157.8)",
+          "oklch(49.3% 0.024 157.8)",
+          "oklch(60.7% 0.021 157.8)",
+          "oklch(72.1% 0.017 157.8)",
+          "oklch(83.6% 0.014 157.8)",
+          "oklch(95.0% 0.010 157.8)"
+        ]
+      },
+      "on-ground": {
+        "role": "neutral",
+        "displayName": "Evening Light",
+        "canonical": "#f4ecdc",
+        "oklch": "oklch(94.5% 0.023 84.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 84.6)",
+          "oklch(26.4% 0.006 84.6)",
+          "oklch(37.9% 0.007 84.6)",
+          "oklch(49.3% 0.010 84.6)",
+          "oklch(60.7% 0.014 84.6)",
+          "oklch(72.1% 0.017 84.6)",
+          "oklch(83.6% 0.020 84.6)",
+          "oklch(95.0% 0.023 84.6)"
+        ]
+      },
+      "on-ground-soft": {
+        "role": "neutral",
+        "displayName": "Sage",
+        "canonical": "#c9d6c6",
+        "oklch": "oklch(86.2% 0.026 139.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 139.8)",
+          "oklch(26.4% 0.007 139.8)",
+          "oklch(37.9% 0.011 139.8)",
+          "oklch(49.3% 0.014 139.8)",
+          "oklch(60.7% 0.018 139.8)",
+          "oklch(72.1% 0.022 139.8)",
+          "oklch(83.6% 0.025 139.8)",
+          "oklch(95.0% 0.023 139.8)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline and closer name. Uppercase, max 11ch in the hero; the hero's second half is set in pine."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings. Uppercase."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service row and step headings (planks use 1.3rem / 1.05). Uppercase."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Hero pitch and closer line in on-ground-soft, max 34ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text; ledes capped at 44-46ch."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Row descriptions and plank text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Button labels, sentence case."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Owner's name in top bar and footer. Uppercase."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Tags and the photo caption."
+      }
+    },
+    "shadows": [
+      {
+        "name": "button-lift",
+        "value": "0 8px 18px -10px rgba(8,20,16,.7)",
+        "purpose": "Primary button at rest."
+      },
+      {
+        "name": "button-lift-hover",
+        "value": "0 12px 24px -12px rgba(8,20,16,.8)",
+        "purpose": "Primary button hover."
+      },
+      {
+        "name": "frame-hang",
+        "value": "0 26px 50px -22px rgba(21,44,37,.65), 0 6px 14px -6px rgba(21,44,37,.35)",
+        "purpose": "Photo frame hanging over the fence; deepest shadow."
+      },
+      {
+        "name": "plank-lift",
+        "value": "0 18px 30px -18px rgba(0,0,0,.55)",
+        "purpose": "Step planks on the evergreen band."
+      },
+      {
+        "name": "bar-cast",
+        "value": "0 -10px 30px -12px rgba(0,0,0,.5)",
+        "purpose": "Sticky contact bar, cast upward."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-board",
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "purpose": "All CSS state transitions."
+      },
+      {
+        "name": "duration-control",
+        "value": "180ms",
+        "purpose": "Button background, shadow and press transitions."
+      },
+      {
+        "name": "duration-row",
+        "value": "200ms",
+        "purpose": "Service row hover wash."
+      },
+      {
+        "name": "duration-disc",
+        "value": "250ms",
+        "purpose": "Arrow disc slide (translateX 4px) on row hover."
+      },
+      {
+        "name": "duration-bar",
+        "value": "350ms",
+        "purpose": "Sticky bar slide in/out (translateY 110% to 0)."
+      },
+      {
+        "name": "press-scale",
+        "value": "0.97",
+        "purpose": "Button :active scale."
+      },
+      {
+        "name": "spring",
+        "value": "stiffness 38, damping 6.5",
+        "purpose": "Shared spring for fence boards and plank/frame lean (The One Spring Rule)."
+      },
+      {
+        "name": "fence-cfg-phone",
+        "value": "boardH 30, gap 5, postEvery 150, postW 13, slice 4, waveAmp 1.4, waveSpeed 2.4 rad/s, pushR 80, push 4200, carry 44, spring 38, damp 6.5, maxOff 14, dust 34, burstMax 70, sheen 70px/s",
+        "purpose": "Living fence constants below 760px."
+      },
+      {
+        "name": "fence-cfg-desktop",
+        "value": "boardH 40, gap 6, postEvery 270, postW 17, slice 5, waveAmp 1.8, waveSpeed 2.4 rad/s, pushR 120, push 4200, carry 44, spring 38, damp 6.5, maxOff 14, dust 80, burstMax 150, sheen 70px/s",
+        "purpose": "Living fence constants at 760px and up."
+      },
+      {
+        "name": "seam-wave",
+        "value": "height 46px; lines at y 13/23/33 (viewBox 1200x46); STEP 20, SWELL 7, RIPPLE 2.6, SPEED 2.2 rad/s; per-seam phase 1.7",
+        "purpose": "Animated grain seams; fill follows the middle line."
+      },
+      {
+        "name": "lean",
+        "value": "radius 60px phone / 220px desktop (plus half element width); rotation clamp ±6deg; idle sway ±0.35deg at 1.3 rad/s; frame base -1.6deg phone / 2deg desktop",
+        "purpose": "Planks and photo frame lean and shift away from the pointer."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Removes all transitions; fence and seams draw one still frame; lean disabled."
+      },
+      {
+        "name": "loop",
+        "value": "single requestAnimationFrame, dt capped 50ms, IntersectionObserver-gated",
+        "purpose": "Every animated part subscribes only while visible."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "760px",
+        "purpose": "Only structural breakpoint (min-width; scripts use max-width 759px for phone constants)."
+      },
+      {
+        "name": "xl",
+        "value": "1100px",
+        "purpose": "Only lifts the photo frame higher (margin-top -600px)."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Pre-filled text for a free estimate; always the first action.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\"><path d=\"M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 3.5V17.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z\"/><path d=\"M7.5 10.5h9M7.5 13.5h5.5\"/></svg>Text for a free estimate</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 22px;border-radius:14px;border:2px solid #e6bf80;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:17px;letter-spacing:.01em;text-decoration:none;transition:transform .18s cubic-bezier(.2,.8,.2,1),background-color .18s,box-shadow .18s}.ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.ds-btn-primary{background:#e6bf80;color:#1c2a24;box-shadow:0 8px 18px -10px rgba(8,20,16,.7)}.ds-btn-primary:hover{background:#f0d09a;box-shadow:0 12px 24px -12px rgba(8,20,16,.8)}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:3px solid #f0d09a;outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Button (on evergreen)",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Call action; outlined in pine on the evergreen ground.",
+      "html": "<div style=\"background:#1d3a31;padding:16px\"><a class=\"ds-btn2\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\"><path d=\"M6.6 3.5 9.3 4l1.3 4-2 1.6a12.5 12.5 0 0 0 5.8 5.8l1.6-2 4 1.3.5 2.7a2 2 0 0 1-2 2.1A16.6 16.6 0 0 1 3.4 5.5a2 2 0 0 1 2.1-2Z\"/></svg>Call Anthony</a></div>",
+      "css": ".ds-btn2{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 22px;border-radius:14px;border:2px solid #e6bf80;background:transparent;color:#f4ecdc;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:17px;letter-spacing:.01em;text-decoration:none;transition:transform .18s cubic-bezier(.2,.8,.2,1),background-color .18s}.ds-btn2:hover{background:rgba(230,191,128,.12)}.ds-btn2:active{transform:scale(.97)}.ds-btn2:focus-visible{outline:3px solid #f0d09a;outline-offset:3px}.ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}"
+    },
+    {
+      "name": "Secondary Button (on cream)",
+      "kind": "button",
+      "refersTo": "button-secondary-on-cream",
+      "description": "Outlined action inside a cream section; weathered-pine border, ink label.",
+      "html": "<div style=\"background:#f5ead6;padding:16px\"><a class=\"ds-btn3\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\"><path d=\"M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11Z\"/><circle cx=\"12\" cy=\"10\" r=\"2.3\"/></svg>Text your town</a></div>",
+      "css": ".ds-btn3{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 22px;border-radius:14px;border:2px solid #b98a4e;background:transparent;color:#1c2a24;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:17px;text-decoration:none;transition:transform .18s cubic-bezier(.2,.8,.2,1),background-color .18s}.ds-btn3:hover{background:rgba(230,191,128,.12)}.ds-btn3:active{transform:scale(.97)}.ds-btn3:focus-visible{outline:3px solid #f0d09a;outline-offset:3px}.ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Whole-row link to a pre-filled text for one job type, with an ink arrow disc.",
+      "html": "<div style=\"background:#f5ead6;padding:16px\"><a class=\"ds-row\" href=\"#\"><div class=\"ds-row-txt\"><h3>Fences</h3><p>Horizontal pressure-treated boards on all-new posts.</p></div><span class=\"ds-go\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 12h13M13 6.5l5.5 5.5-5.5 5.5\"/></svg></span></a></div>",
+      "css": ".ds-row{display:flex;align-items:center;gap:16px;padding:20px 4px;min-height:64px;text-decoration:none;color:#1c2a24;border-top:2px solid #ead9bb;border-bottom:2px solid #ead9bb;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;transition:background-color .2s}.ds-row-txt{flex:1}.ds-row h3{margin:0;font-size:clamp(1.35rem,6vw,1.7rem);line-height:1;font-weight:900;text-transform:uppercase;letter-spacing:-.02em}.ds-row p{margin:6px 0 0;font-size:16px;color:#4a5a50}.ds-go{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#1c2a24;color:#e6bf80;transition:transform .25s cubic-bezier(.2,.8,.2,1)}.ds-go svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.ds-row:hover{background:rgba(230,191,128,.18)}.ds-row:hover .ds-go{transform:translateX(4px)}.ds-row:focus-visible{outline:3px solid #f0d09a;outline-offset:3px}"
+    },
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Static scope-hint pill inside a service row.",
+      "html": "<div class=\"ds-tags\"><span>Decks</span><span>Tile</span><span>Flooring</span><span>Windows &amp; doors</span></div>",
+      "css": ".ds-tags{display:flex;flex-wrap:wrap;gap:6px}.ds-tags span{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-size:14px;font-weight:700;padding:5px 10px;border-radius:999px;background:#ead9bb;color:#1c2a24}"
+    },
+    {
+      "name": "Step Plank",
+      "kind": "card",
+      "refersTo": "plank",
+      "description": "One estimate step as a pine plank with an ink number disc (texture is procedural at runtime; pine fill shown).",
+      "html": "<div style=\"background:#1d3a31;padding:20px\"><div class=\"ds-plank\"><span class=\"ds-n\">1</span><h3>Text a photo</h3><p>Snap the spot and send it with your town.</p></div></div>",
+      "css": ".ds-plank{position:relative;padding:20px 20px 20px 70px;border-radius:10px;background:var(--pine,#e6bf80) var(--tex-b,none) center/cover;color:#1c2a24;box-shadow:0 18px 30px -18px rgba(0,0,0,.55);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;transform:rotate(-.3deg);transition:transform .25s cubic-bezier(.2,.8,.2,1)}.ds-plank:hover{transform:rotate(.6deg) translateX(3px)}.ds-n{position:absolute;left:18px;top:18px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#1c2a24;color:#e6bf80;font-weight:900}.ds-plank h3{margin:0;font-size:1.3rem;line-height:1.05;font-weight:900;text-transform:uppercase;letter-spacing:-.02em}.ds-plank p{margin:6px 0 0;font-size:16px;line-height:1.45}"
+    },
+    {
+      "name": "Photo Frame",
+      "kind": "card",
+      "refersTo": "photo-frame",
+      "description": "Real job photo mounted in procedural pine, resting at a lean.",
+      "html": "<div style=\"background:#f5ead6;padding:28px\"><figure class=\"ds-frame\"><div class=\"ds-photo\"></div><figcaption>Horizontal pressure-treated fence</figcaption></figure></div>",
+      "css": ".ds-frame{margin:0 auto;width:min(100%,240px);padding:12px;border-radius:12px;background:var(--pine,#e6bf80) var(--tex-a,none) center/cover;box-shadow:0 26px 50px -22px rgba(21,44,37,.65),0 6px 14px -6px rgba(21,44,37,.35);transform:rotate(-1.6deg);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-frame:hover{transform:rotate(-.4deg) translateX(-3px)}.ds-photo{aspect-ratio:640/888;border-radius:5px;background:#cdb898}.ds-frame figcaption{margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-size:14px;font-weight:700;color:#1c2a24;text-align:center}"
+    },
+    {
+      "name": "Sticky Contact Bar",
+      "kind": "nav",
+      "refersTo": "sticky-bar",
+      "description": "Phone-only fixed bottom bar with Text (fills) and Call; slides up once hero buttons leave view.",
+      "html": "<nav class=\"ds-bar\"><a class=\"ds-b ds-b1\" href=\"#\">Text for a free estimate</a><a class=\"ds-b ds-b2\" href=\"#\">Call</a></nav>",
+      "css": ".ds-bar{display:flex;gap:10px;padding:10px 12px;background:rgba(21,44,37,.94);box-shadow:0 -10px 30px -12px rgba(0,0,0,.5);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-b{display:flex;align-items:center;justify-content:center;min-height:58px;border-radius:14px;border:2px solid #e6bf80;font-weight:800;font-size:17px;text-decoration:none;transition:transform .18s cubic-bezier(.2,.8,.2,1),background-color .18s}.ds-b1{flex:1;background:#e6bf80;color:#1c2a24;box-shadow:0 8px 18px -10px rgba(8,20,16,.7)}.ds-b1:hover{background:#f0d09a}.ds-b2{flex:none;padding:0 18px;color:#f4ecdc}.ds-b2:hover{background:rgba(230,191,128,.12)}.ds-b:active{transform:scale(.97)}.ds-b:focus-visible{outline:3px solid #f0d09a;outline-offset:3px}"
+    },
+    {
+      "name": "Grain Seam",
+      "kind": "custom",
+      "refersTo": "seam",
+      "description": "46px three-line grain transition from evergreen to cream (static frame; animated at runtime).",
+      "html": "<div class=\"ds-seam\"><svg viewBox=\"0 0 1200 46\" preserveAspectRatio=\"none\"><path class=\"f\" d=\"M0 23 C200 16 400 30 600 23 S1000 16 1200 23 L1200 46 L0 46 Z\"/><path class=\"l1\" d=\"M0 13 C200 6 400 20 600 13 S1000 6 1200 13\"/><path class=\"l3\" d=\"M0 33 C200 26 400 40 600 33 S1000 26 1200 33\"/><path class=\"l2\" d=\"M0 23 C200 16 400 30 600 23 S1000 16 1200 23\"/></svg></div>",
+      "css": ".ds-seam{height:46px;background:#152c25}.ds-seam svg{display:block;width:100%;height:100%}.ds-seam .f{fill:#f5ead6}.ds-seam .l1,.ds-seam .l2,.ds-seam .l3{fill:none;stroke-linecap:round;vector-effect:non-scaling-stroke}.ds-seam .l1{stroke:#b98a4e;stroke-width:2;opacity:.75}.ds-seam .l2{stroke:#e6bf80;stroke-width:3.5}.ds-seam .l3{stroke:#7a5530;stroke-width:1.6;opacity:.6}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The New Fence in the Backyard",
+    "overview": "**Creative North Star: \"The New Fence in the Backyard\"**\n\nThe page is built out of the thing the owner is proudest of: a freshly built horizontal fence of pressure-treated pine, standing on new posts against a deep evergreen yard, with sunlit sawdust hanging in the air. Every surface is either the yard (evergreen ground), sawn lumber (cream sections, pine planks and frames), or the hardware between them (ink discs, grain-line seams). Nothing on the page is a generic web surface; the job photo is mounted in a pine frame, the steps are planks, and the hero and closer each end in a living fence the visitor can push.\n\nDensity is low and the reading order is short: one heavy headline, one line of pitch, two thumb-sized buttons. The system is phone-first and contractor-to-neighbor in tone: chunky uppercase type, big tap targets, warm wood against cool green. Motion is physical, not decorative: boards bow, spring and settle; planks lean away from a finger; seams ripple like grain. All of it stops dead under reduced motion and leaves a complete static page.\n\nThe confirmed rejection is a black ground. The darkest thing on the page is evergreen.",
+    "keyCharacteristics": [
+      "Two grounds only: evergreen (`ground`) and sawn cream (`cream`), joined by animated three-line grain seams.",
+      "Pine (`pine`) is both the material and the primary action color; ink text always sits on it.",
+      "One system font stack, made characterful by weight 900, uppercase and tight tracking.",
+      "Procedural pine textures (generated at runtime) skin the fence, the photo frame and the step planks.",
+      "One shared spring (stiffness 38, damping 6.5) drives every physical motion.",
+      "Phone base layout, one structural breakpoint at 760px, a sticky Text/Call bar on phones."
+    ],
+    "rules": [
+      {
+        "name": "The Evergreen Ground Rule",
+        "body": "No black ground, anywhere. Dark surfaces are `ground` or `ground-deep`; even the shadow behind the canvas fence boards is a deep green, not black.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Grounds Rule",
+        "body": "A section is either evergreen with `on-ground` text or cream with `ink` text. Never introduce a third surface color; transitions between the two happen only through a seam.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-On-Pine Rule",
+        "body": "Anything filled with pine carries `ink` text, and anything filled with `ink` carries a pine glyph. Light text never sits on pine.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "One font stack for everything. Hierarchy is built with weight (900 / 800 / 700 / 600 / 400), case and size; never add a second family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Uppercase Is For Headings Rule",
+        "body": "Uppercase is reserved for weight-900 headings and the wordmark. Body, buttons, tags and captions stay in sentence case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Thumb First Rule",
+        "body": "The primary action is visible without scrolling on a phone, and once the hero buttons scroll away a fixed bottom bar (Text, Call) slides up; it hides again when the closer's buttons are on screen. Every tap target is at least 44px; buttons are 58px tall.",
+        "section": "layout"
+      },
+      {
+        "name": "The Same Fence Twice Rule",
+        "body": "The page opens and closes on the living fence. Copy sits above the fence, never on top of the boards.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lifted Not Offset Rule",
+        "body": "Shadows have zero x-offset and negative spread. No hard-edged or diagonally offset shadows, no borders standing in for elevation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Seam Rule",
+        "body": "Section boundaries are grain, never a straight edge or a divider line.",
+        "section": "shapes"
+      },
+      {
+        "name": "The One Spring Rule",
+        "body": "Every physical response (fence boards, plank and frame lean) uses the same spring: stiffness 38, damping 6.5. New interactive elements inherit it so everything feels like the same wood.",
+        "section": "components"
+      },
+      {
+        "name": "The Still Page Rule",
+        "body": "Motion is an enhancement over a complete static composition; nothing is revealed, hidden or sequenced by animation except the sticky bar.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** keep every dark surface evergreen (`ground`, `ground-deep`); the darkest canvas value is a deep green.",
+      "**Do** put `ink` text on pine and pine glyphs on `ink` discs.",
+      "**Do** make the pre-filled `sms:` text the primary (pine) button and `tel:` the secondary (outlined) button, in that order.",
+      "**Do** join evergreen and cream sections only with the three-line grain seam (46px).",
+      "**Do** build headings at weight 900, uppercase, -0.02em, line-height 0.95 in the system stack.",
+      "**Do** keep tap targets at least 44px and primary buttons 58px tall.",
+      "**Do** design the phone layout first; restructure only at 760px.",
+      "**Do** drive any new physical motion with the shared spring (38 / 6.5) and the shared loop, gated by viewport visibility and fully disabled under reduced motion.",
+      "**Do** frame real photography in procedural pine rather than placing it bare."
+    ],
+    "donts": [
+      "**Don't** use black or near-black neutral grounds.",
+      "**Don't** add a second typeface or a webfont; the system stack is the house display face.",
+      "**Don't** introduce a third surface color or a straight-edged section divider.",
+      "**Don't** put light text on pine or pine text on cream.",
+      "**Don't** use hard-edged or horizontally offset shadows.",
+      "**Don't** place copy over the fence boards.",
+      "**Don't** set body, button or tag text in uppercase."
+    ]
+  }
+}
