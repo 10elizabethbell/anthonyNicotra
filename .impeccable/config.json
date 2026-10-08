@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-08T21:38:47.394Z",
+        "reason": "Claude: job photo src is assigned lazily from an inline data block per pitch-site build-notes (single-file weight recipe)"
+      }
+    ]
+  }
+}
