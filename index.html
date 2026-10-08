@@ -29,7 +29,7 @@
   --radius:14px;
   --btn-h:58px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  --tex-a:none; --tex-b:none; --tex-c:none; /* pine textures, set by JS */
+  --tex-a:none; --tex-b:none; --tex-c:none; --tex-d:none; /* pine textures, set by JS */
 }
 
 /* =========================================================
@@ -40,6 +40,7 @@ html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;font-family:var(--font);font-size:17px;line-height:1.55;color:var(--on-ground);background:var(--ground);overflow-x:hidden}
 ::selection{background:var(--pine);color:var(--ink)}
 a{color:inherit}
+.nw{white-space:nowrap}
 img{display:block;max-width:100%}
 :focus-visible{outline:3px solid var(--pine-hi);outline-offset:3px;border-radius:8px}
 .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
@@ -76,7 +77,7 @@ p{margin:0}
 /* =========================================================
    Hero + fence canvas
    ========================================================= */
-.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;background:radial-gradient(120% 70% at 85% 0%,#2a5143 0%,transparent 60%),var(--ground)}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;background:linear-gradient(180deg,var(--ground-up) 0%,var(--ground) 55%)}
 .hero canvas,.closer canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
 .hero-copy{position:relative;z-index:2;padding:26px 20px 0;max-width:1180px;width:100%;margin:0 auto}
 .hero h1{font-size:clamp(2.6rem,12.4vw,6rem);max-width:11ch}
@@ -97,7 +98,7 @@ p{margin:0}
 .seam .l1{stroke:var(--pine-deep);stroke-width:2;opacity:.75}
 .seam .l2{stroke:var(--pine);stroke-width:3.5}
 .seam .l3{stroke:var(--pine-dark);stroke-width:1.6;opacity:.6}
-.seam.to-cream{background:var(--ground-deep)} .seam.to-cream .fill{fill:var(--cream)}
+.seam.to-cream{background:var(--ground-deep)} .seam.to-cream.from-ground{background:var(--ground)} .seam.to-cream .fill{fill:var(--cream)}
 .seam.to-green{background:var(--cream)} .seam.to-green .fill{fill:var(--ground)}
 
 /* =========================================================
@@ -138,7 +139,7 @@ p{margin:0}
 .planks{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:14px}
 .plank{position:relative;padding:20px 20px 20px 70px;border-radius:10px;background:var(--pine) var(--tex-b) center/cover;color:var(--ink);box-shadow:0 18px 30px -18px rgba(0,0,0,.55);will-change:transform}
 .plank:nth-child(2){background-image:var(--tex-c)}
-.plank:nth-child(3){background-image:var(--tex-a)}
+.plank:nth-child(3){background-image:var(--tex-d)}
 .plank .n{position:absolute;left:18px;top:18px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--pine);font-weight:900}
 .plank h3{font-size:1.3rem;line-height:1.05}
 .plank p{margin-top:6px;font-size:16px;line-height:1.45}
@@ -149,12 +150,12 @@ p{margin:0}
 .area{padding:12px 0 60px}
 .area .wrap{display:grid;gap:14px}
 .area p{max-width:46ch;color:var(--ink-soft)}
-.gap-mark{justify-self:start;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;border:2px dashed var(--pine-deep);font-weight:800;font-size:15px;color:var(--ink)}
+.area-act{margin-top:6px}
 
 /* =========================================================
    Closer (fence again) + footer
    ========================================================= */
-.closer{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:560px;background:radial-gradient(100% 60% at 10% 0%,#2a5143 0%,transparent 60%),var(--ground)}
+.closer{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:560px;background:var(--ground)}
 .closer-copy{position:relative;z-index:2;padding:40px 20px 0;max-width:1180px;width:100%;margin:0 auto}
 .closer h2{font-size:clamp(2.6rem,12.4vw,6rem)}
 .closer p{margin:14px 0 22px;color:var(--on-ground-soft);font-size:18px;max-width:34ch}
@@ -162,7 +163,7 @@ p{margin:0}
 footer{background:var(--ground-deep);color:var(--on-ground-soft);padding:26px 0 calc(110px + env(safe-area-inset-bottom));font-size:15px}
 footer .wrap{display:grid;gap:6px}
 footer b{color:var(--on-ground);text-transform:uppercase;letter-spacing:.04em}
-footer a{color:var(--pine-hi);text-decoration-thickness:2px;text-underline-offset:3px}
+footer a{display:inline-block;padding:10px 0;margin:-10px 0;color:var(--pine-hi);text-decoration-thickness:2px;text-underline-offset:3px}
 footer .demo{margin-top:10px;opacity:.85}
 
 /* =========================================================
@@ -195,7 +196,7 @@ footer .demo{margin-top:10px;opacity:.85}
   .bar{display:none}
   footer{padding-bottom:32px}
 }
-@media (min-width:1100px){ .proof .frame{margin-top:-470px} }
+@media (min-width:1100px){ .proof .frame{margin-top:-600px} }
 
 @media (prefers-reduced-motion:reduce){ *{transition:none!important} html{scroll-behavior:auto} }
 </style>
@@ -207,6 +208,7 @@ THESIS: A contractor who posts "call or text for free estimate" gets a page that
 OWN-WORLD: Fresh pressure-treated pine, horizontal boards on new posts, sunlit sawdust over a deep evergreen backyard. Grain lines, planks, knots. No black ground.
 STORY: See the fence move -> his headline (new from the posts up) -> text for a free estimate -> his real job and his own words -> what he builds -> how an estimate works -> where (honest gap) -> his name and the buttons again.
 FIRST VIEWPORT (phone): wordmark, benefit headline, one-line pitch, Text + Call buttons, living fence band at the bottom, the framed job photo peeking up over it.
+CONCEPT ROLL: skipped (unattended pitch-site run; world chosen from 6 trade worlds, runner-up in HANDOFF.md).
 FORM: Living fence canvas (boards bow between posts on layered waves, push away from finger/mouse with a spring wobble, fast swipes knock sawdust loose); grain-line seams between sections; job photo and step cards framed in the same procedural pine.
 -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -264,7 +266,7 @@ FORM: Living fence canvas (boards bow between posts on layered waves, push away 
         <div class="txt"><h3>Gates &amp; posts</h3><p>New posts set and a new gate hung with the fence.</p></div>
         <span class="go"><svg class="icon"><use href="#i-arrow"/></svg></span></a></li>
       <li><a class="row" data-sms="Other job (tell us what)" href="sms:+12672078015">
-        <div class="txt"><h3>Any job big or small</h3><p>From his posts:</p>
+        <div class="txt"><h3>Any job big or small</h3><p>Tagged in his posts:</p>
           <div class="tags"><span>Decks</span><span>Tile</span><span>Flooring</span><span>Kitchens</span><span>Baths</span><span>Masonry</span><span>Windows &amp; doors</span></div></div>
         <span class="go"><svg class="icon"><use href="#i-arrow"/></svg></span></a></li>
     </ul>
@@ -277,20 +279,20 @@ FORM: Living fence canvas (boards bow between posts on layered waves, push away 
   <div class="wrap">
     <h2 id="steps-h">How a free estimate works</h2>
     <ol class="planks">
-      <li class="plank"><span class="n">1</span><h3>Text a photo</h3><p>Snap the spot: old fence, bare yard, broken gate. Send it to 267-207-8015 with your town.</p></li>
+      <li class="plank"><span class="n">1</span><h3>Text a photo</h3><p>Snap the spot: old fence, bare yard, broken gate. Send it to <span class="nw">267-207-8015</span> with your town.</p></li>
       <li class="plank"><span class="n">2</span><h3>Get a free estimate</h3><p>Anthony looks it over and gets back to you. The estimate costs nothing.</p></li>
       <li class="plank"><span class="n">3</span><h3>It gets built</h3><p>New posts set, boards run level, gate hung.</p></li>
     </ol>
   </div>
 </section>
 
-<div class="seam to-cream" aria-hidden="true"><svg viewBox="0 0 1200 46" preserveAspectRatio="none"><path class="fill"/><path class="l l1"/><path class="l l3"/><path class="l l2"/></svg></div>
+<div class="seam to-cream from-ground" aria-hidden="true"><svg viewBox="0 0 1200 46" preserveAspectRatio="none"><path class="fill"/><path class="l l1"/><path class="l l3"/><path class="l l2"/></svg></div>
 
 <section class="area on-cream" aria-labelledby="area-h">
   <div class="wrap">
     <h2 id="area-h">Where he works</h2>
-    <p>Anthony posts his jobs to New Jersey and Philadelphia contractor groups. Not sure he covers your street? Text your town and ask.</p>
-    <span class="gap-mark"><svg class="icon"><use href="#i-pin"/></svg>Town list coming soon</span>
+    <p>Anthony posts his jobs in New Jersey contractor groups and tags Philadelphia-area work too. Not sure he covers your street? Text your town and ask.</p>
+    <div class="actions area-act"><a class="btn btn-secondary" data-sms="Do you cover my town?" href="sms:+12672078015"><svg class="icon"><use href="#i-pin"/></svg>Text your town</a></div>
   </div>
 </section>
 
@@ -377,7 +379,7 @@ var Pointer = (function(){
    ========================================================= */
 var Pine = (function(){
   function rng(s){ return function(){ s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
-  function board(w, h, seed, scale){
+  function board(w, h, seed, scale, noKnots){
     scale = scale || 1;
     var c = document.createElement('canvas');
     c.width = Math.ceil(w * scale); c.height = Math.ceil(h * scale);
@@ -397,7 +399,7 @@ var Pine = (function(){
       sg.addColorStop(1, 'hsla(' + hue + ',60%,50%,0)');
       g.fillStyle = sg; g.fillRect(0, 0, w, h);
     }
-    var knots = [], nk = Math.floor(w / 320 + r() * 1.6);
+    var knots = [], nk = noKnots ? 0 : Math.floor(w / 320 + r() * 1.6);
     for (var k = 0; k < nk; k++) knots.push({ x: r() * w, y: h * (.3 + r() * .4), s: 1.6 + r() * 2.6 });
     var lines = Math.round(h / 2.1);
     for (var i = 0; i < lines; i++){
@@ -427,8 +429,8 @@ var Pine = (function(){
   // CSS textures for the photo frame and step planks
   try {
     var root = document.documentElement.style;
-    ['a', 'b', 'c'].forEach(function(k, i){
-      root.setProperty('--tex-' + k, 'url(' + board(720, 140, 101 + i * 37, 1).toDataURL('image/jpeg', .82) + ')');
+    ['a', 'b', 'c', 'd'].forEach(function(k, i){ // a: frame (knots), b-d: planks (clear, text sits on them)
+      root.setProperty('--tex-' + k, 'url(' + board(720, 140, 101 + i * 37, 1, k !== 'a').toDataURL('image/jpeg', .82) + ')');
     });
   } catch (e) {}
   return { board: board };
@@ -446,12 +448,12 @@ var Pine = (function(){
     gap: MOBILE ? 5 : 6,          // shadow gap between boards
     postEvery: MOBILE ? 150 : 270,// px between posts
     postW: MOBILE ? 13 : 17,
-    slice: MOBILE ? 7 : 9,        // px per bend column
-    waveAmp: MOBILE ? 2.6 : 3.4,  // ambient bow px
+    slice: MOBILE ? 4 : 5,        // px per bend column
+    waveAmp: MOBILE ? 1.4 : 1.8,  // ambient bow px
     waveSpeed: 2.4,               // ambient wave speed (rad/s)
     pushR: MOBILE ? 80 : 120,     // pointer radius
     push: 4200, carry: 44,        // pointer push / velocity carry
-    spring: 38, damp: 6.5, maxOff: 24,
+    spring: 38, damp: 6.5, maxOff: 14,
     dust: MOBILE ? 34 : 80,       // floating motes
     burstMax: MOBILE ? 70 : 150,  // loose sawdust cap
     sheen: 70                     // sun band speed px/s
@@ -530,7 +532,7 @@ var Pine = (function(){
           v += (-CFG.spring * o - CFG.damp * v) * dt; o += v * dt;
           if (o > CFG.maxOff) { o = CFG.maxOff; v *= -.3; } else if (o < -CFG.maxOff) { o = -CFG.maxOff; v *= -.3; }
           bd.off[c] = o; bd.vel[c] = v;
-          var amb = amp * (Math.sin(x * .011 - t * ws + b * .8) + .55 * Math.sin(x * .026 + t * ws * .7 + b * 1.9) + .35 * Math.sin(x * .004 - t * ws * .4));
+          var amb = amp * (Math.sin(x * .011 - t * ws + b * .12) + .55 * Math.sin(x * .026 + t * ws * .7 + b * .2) + .35 * Math.sin(x * .004 - t * ws * .4));
           var yy = bd.y + (amb + o) * env(x + sw / 2);
           ctx.drawImage(img, x * dpr, 0, sw * dpr, img.height, x, yy, sw + .6, CFG.boardH);
         }
@@ -633,7 +635,7 @@ var Pine = (function(){
    ========================================================= */
 (function(){
   if (REDUCED) return;
-  var R = 220, K = 38, D = 6.5;
+  var R = window.matchMedia('(max-width: 759px)').matches ? 60 : 220, K = 38, D = 6.5;
   var items = [].slice.call(document.querySelectorAll('.plank, .frame')).map(function(el){
     return { el: el, base: parseFloat(getComputedStyle(el).rotate) || 0, rot: 0, v: 0, ox: 0, vx: 0,
       baseT: el.classList.contains('frame') ? (window.matchMedia('(min-width: 760px)').matches ? 2 : -1.6) : 0, ph: Math.random() * 6 };
@@ -655,7 +657,12 @@ var Pine = (function(){
       it.el.style.transform = 'translateX(' + it.ox.toFixed(2) + 'px) rotate(' + (it.baseT + sway + Math.max(-6, Math.min(6, it.rot))).toFixed(3) + 'deg)';
     });
   }
-  Loop.add(tick);
+  var zones = [document.querySelector('.proof'), document.querySelector('.steps')], on = [false, false];
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ on[zones.indexOf(e.target)] = e.isIntersecting; });
+    if (on[0] || on[1]) Loop.add(tick); else Loop.remove(tick);
+  });
+  zones.forEach(function(z){ io.observe(z); });
 })();
 
 /* =========================================================
