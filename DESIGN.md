@@ -1,311 +1,308 @@
 ---
-name: Anthony Nicotra — Fencing & Home Contracting
-description: A phone-first one-pager built out of fresh pressure-treated pine on an evergreen backyard, whose job is a pre-filled text for a free estimate.
+name: Anthony Nicotra · Fencing & Home Contracting
+description: A calm, phone-first one-pager in paper and navy bands with one pressure-treated-pine accent, whose job is a pre-filled text for a free estimate.
 colors:
-  ground: "#1d3a31"
-  ground-deep: "#152c25"
-  ground-up: "#24463b"
-  cream: "#f5ead6"
-  cream-deep: "#ead9bb"
-  pine: "#e6bf80"
-  pine-hi: "#f0d09a"
-  pine-deep: "#b98a4e"
-  pine-dark: "#7a5530"
-  ink: "#1c2a24"
-  ink-soft: "#4a5a50"
-  on-ground: "#f4ecdc"
-  on-ground-soft: "#c9d6c6"
+  paper: "#f4f6fb"
+  card: "#ffffff"
+  ink: "#13243a"
+  body: "#2a3a4c"
+  soft: "#4a5868"
+  navy: "#1f4166"
+  deep: "#13243a"
+  on-dark: "#f4f7fb"
+  on-dark-soft: "#c9d6e6"
+  pine: "#e8b65a"
+  pine-2: "#f0c878"
+  pine-ink: "#7c5210"
+  focus: "#1f4166"
+  error: "#b3261e"
 typography:
   display:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(2.6rem, 12.4vw, 6rem)"
-    fontWeight: 900
-    lineHeight: 0.95
-    letterSpacing: "-0.02em"
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(42px, 12vw, 80px)"
+    fontWeight: 400
+    lineHeight: 1.02
+    letterSpacing: "-0.005em"
   headline:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(2rem, 9vw, 3.6rem)"
-    fontWeight: 900
-    lineHeight: 0.95
-    letterSpacing: "-0.02em"
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(30px, 7.6vw, 48px)"
+    fontWeight: 400
+    lineHeight: 1.08
+    letterSpacing: "-0.005em"
   title:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(1.35rem, 6vw, 1.7rem)"
-    fontWeight: 900
-    lineHeight: 1
-    letterSpacing: "-0.02em"
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(21px, 5.6vw, 24px)"
+    fontWeight: 400
+    lineHeight: 1.2
   lead:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(17px, 4.6vw, 20px)"
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(17px, 4.7vw, 20px)"
     fontWeight: 400
-    lineHeight: 1.4
+    lineHeight: 1.5
   body:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "17px"
-    fontWeight: 400
-    lineHeight: 1.55
-  body-sm:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
     fontSize: "16px"
     fontWeight: 400
-    lineHeight: 1.45
+    lineHeight: 1.7
   label:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "17px"
-    fontWeight: 800
-    letterSpacing: "0.01em"
-  wordmark:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "17px"
-    fontWeight: 900
-    lineHeight: 1.05
-    letterSpacing: "0.04em"
-  small:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
     fontSize: "14px"
-    fontWeight: 700
+    fontWeight: 500
+    lineHeight: 1
+    letterSpacing: "0.02em"
+  button:
+    fontFamily: "Cal Sans, Avenir Next, Segoe UI, system-ui, sans-serif"
+    fontSize: "18px"
+    fontWeight: 400
+    lineHeight: 1
 rounded:
-  inset: "5px"
-  plank: "10px"
-  frame: "12px"
-  control: "14px"
+  card: "24px"
+  field: "10px"
   pill: "999px"
-  disc: "50%"
 spacing:
   gutter: "20px"
-  gutter-wide: "32px"
+  gutter-wide: "40px"
+  band: "64px"
+  band-wide: "96px"
   stack-sm: "12px"
-  stack-md: "14px"
-  stack-lg: "22px"
-  column-gap: "56px"
-  container: "1180px"
-  control-height: "58px"
-  hit-min: "44px"
+  stack-md: "20px"
+  stack-lg: "32px"
 components:
   button-primary:
     backgroundColor: "{colors.pine}"
     textColor: "{colors.ink}"
-    typography: "{typography.label}"
-    rounded: "{rounded.control}"
-    padding: "0 22px"
-    height: "{spacing.control-height}"
-  button-primary-hover:
-    backgroundColor: "{colors.pine-hi}"
-    textColor: "{colors.ink}"
-  button-secondary:
-    backgroundColor: "transparent"
-    textColor: "{colors.on-ground}"
-    typography: "{typography.label}"
-    rounded: "{rounded.control}"
-    padding: "0 22px"
-    height: "{spacing.control-height}"
-  button-secondary-on-cream:
-    backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.control}"
-  service-row:
-    backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    typography: "{typography.title}"
-    padding: "20px 4px"
-    height: "64px"
-  go-disc:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.pine}"
-    rounded: "{rounded.disc}"
-    size: "44px"
-  tag:
-    backgroundColor: "{colors.cream-deep}"
-    textColor: "{colors.ink}"
-    typography: "{typography.small}"
+    typography: "{typography.button}"
     rounded: "{rounded.pill}"
-    padding: "5px 10px"
-  plank:
-    backgroundColor: "{colors.pine}"
+    padding: "0 26px"
+    height: "56px"
+  button-primary-hover:
+    backgroundColor: "{colors.pine-2}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.plank}"
-    padding: "20px 20px 20px 70px"
-  plank-number:
+  button-ghost:
+    backgroundColor: "transparent"
+    textColor: "{colors.on-dark}"
+    typography: "{typography.button}"
+    rounded: "{rounded.pill}"
+    padding: "0 26px"
+    height: "56px"
+  eyebrow:
+    textColor: "{colors.ink}"
+    typography: "{typography.label}"
+    rounded: "{rounded.pill}"
+    padding: "9px 14px"
+  chip:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body}"
+    rounded: "{rounded.pill}"
+    padding: "0 18px"
+    height: "48px"
+  chip-selected:
     backgroundColor: "{colors.ink}"
-    textColor: "{colors.pine}"
-    rounded: "{rounded.disc}"
-    size: "36px"
-  photo-frame:
+    textColor: "{colors.card}"
+  input:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body}"
+    rounded: "{rounded.field}"
+    padding: "13px 14px"
+    height: "52px"
+  form-card:
+    backgroundColor: "{colors.card}"
+    rounded: "{rounded.card}"
+    padding: "clamp(20px, 5vw, 32px)"
+  arrow-circle:
+    textColor: "{colors.ink}"
+    rounded: "{rounded.pill}"
+    size: "44px"
+  arrow-circle-hover:
     backgroundColor: "{colors.pine}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.frame}"
-    padding: "12px"
-    width: "340px"
-  sticky-bar:
-    backgroundColor: "{colors.ground-deep}"
-    padding: "10px 12px"
+  step-number:
+    backgroundColor: "{colors.pine}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.pill}"
+    size: "48px"
+  float-text:
+    backgroundColor: "{colors.pine}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.pill}"
+    size: "60px"
 ---
 
-# Design System: Anthony Nicotra — Fencing & Home Contracting
+# Design System: Anthony Nicotra · Fencing & Home Contracting
 
 ## Overview
 
-**Creative North Star: "The New Fence in the Backyard"**
+**Creative North Star: "The Squared-Up Yard"**
 
-The page is built out of the thing the owner is proudest of: a freshly built horizontal fence of pressure-treated pine, standing on new posts against a deep evergreen yard, with sunlit sawdust hanging in the air. Every surface is either the yard (evergreen ground), sawn lumber (cream sections, pine planks and frames), or the hardware between them (ink discs, grain-line seams). Nothing on the page is a generic web surface; the job photo is mounted in a pine frame, the steps are planks, and the hero and closer each end in a living fence the visitor can push.
+This is Ellie's house calm band style applied to a hands-on fence builder: a page that earns trust through calm order rather than spectacle. Full-width bands alternate between off-white paper, navy, and deep navy, so the page reads like a fence line of even, level boards. One warm colour runs through it, the gold of fresh pressure-treated pine taken from Anthony's own fence photo (he has no logo or brand colours). Display type is Cal Sans, round and friendly; body copy is the system stack, set loose at 16/1.7 for phones inside Facebook's in-app browser.
 
-Density is low and the reading order is short: one heavy headline, one line of pitch, two thumb-sized buttons. The system is phone-first and contractor-to-neighbor in tone: chunky uppercase type, big tap targets, warm wood against cool green. Motion is physical, not decorative: boards bow, spring and settle; planks lean away from a finger; seams ripple like grain. All of it stops dead under reduced motion and leaves a complete static page.
+Density is low and the rhythm is generous: one idea per band, a single column on phones, two columns only where the content pairs naturally (photo and quote, heading and form, name and big phone number). The one real job photo sits as a 4:5 card in the light band; it is never a full-bleed hero, never stock, never filtered beyond a bottom scrim for its caption. Motion is limited and named: the hero H1 bounces in letter by letter, below-the-fold blocks fade up 12px once, and a floating text circle appears after the hero. All three are absent under reduced motion, and the bounce and fade-up are absent without JS.
 
-The confirmed rejection is a black ground. The darkest thing on the page is evergreen.
+The previous living-pine-fence world (evergreen ground, system 900 display, fence canvas) has been discarded entirely; nothing of it carries forward.
 
 **Key Characteristics:**
-- Two grounds only: evergreen (`ground`) and sawn cream (`cream`), joined by animated three-line grain seams.
-- Pine (`pine`) is both the material and the primary action color; ink text always sits on it.
-- One system font stack, made characterful by weight 900, uppercase and tight tracking.
-- Procedural pine textures (generated at runtime) skin the fence, the photo frame and the step planks.
-- One shared spring (stiffness 38, damping 6.5) drives every physical motion.
-- Phone base layout, one structural breakpoint at 760px, a sticky Text/Call bar on phones.
+- Paper, navy, and deep-navy bands; deep navy carries a faint 135deg line texture.
+- One warm accent (pine gold), used as a fill on light and as fill or text on dark.
+- Cal Sans display at weight 400 for every heading, button, and row label; system body at 16/1.7.
+- Soft geometry: 24px cards, 10px fields, pill buttons, chips, and circles.
+- The phone number is always one tap away: header top right, close band, floating circle.
+- House calm-style features kept by Ellie's choice: eyebrow pills, H1 bounce-in, floating text circle, band texture.
 
 ## Colors
 
-Warm sawn pine against cool evergreen, with ink-green standing in for black.
+A cool paper-and-navy ground with a single warm gold borrowed from the wood of his fence.
 
 ### Primary
-- **Fresh Pressure-Treated Pine** (`pine`): the primary action fill (Text button), the base color under the procedural textures on the photo frame and step planks, the warm half of the hero headline, the `selection` highlight and the arrow/number glyph color inside ink discs.
-- **Sunlit Pine** (`pine-hi`): hover state of the primary button, the focus ring (3px outline, 3px offset), and link color on evergreen (header call link, footer phone link).
-- **Weathered Pine** (`pine-deep`): button borders on cream, the outer grain line of every seam.
-- **Pine Heartwood** (`pine-dark`): the thin dark grain line in seams. Reserved for grain; never a fill.
+- **Pressure-Treated Pine** (pine): The one accent. On light surfaces it is a fill only: the primary button, the step numbers, the floating circle, the eyebrow dot, the arrow circle on hover, and text selection. Text on it is always Ink. On navy and deep navy it may also be text, in the accent phrase that closes a dark-band heading, the big phone icon, and link hovers.
+- **Sunlit Pine** (pine-2): Hover state of the primary button only.
+- **Stained Pine** (pine-ink): Pine when it must be text or an icon on light, such as the header phone icon and the header phone number on hover.
 
 ### Neutral
-- **Evergreen Yard** (`ground`): the page ground, hero, steps band and closer. The browser `theme-color`.
-- **Deep Evergreen** (`ground-deep`): footer, sticky bar (at 94% opacity), the band behind the first seam.
-- **Lifted Evergreen** (`ground-up`): top stop of the hero's vertical gradient into `ground`; the only gradient on a surface.
-- **Sawn Cream** (`cream`): light sections (proof, services, area).
-- **Sawdust Cream** (`cream-deep`): rule lines between service rows (2px) and the tag fill.
-- **Ink Green** (`ink`): all text on cream and pine; the fill of the round number and arrow discs.
-- **Moss Ink** (`ink-soft`): secondary text on cream (ledes, row descriptions, citation).
-- **Evening Light** (`on-ground`): primary text on evergreen.
-- **Sage** (`on-ground-soft`): secondary text on evergreen (pitch line, wordmark descriptor, footer).
+- **Cool Paper** (paper): Page ground, header, light bands, and the inside of fields and unselected chips.
+- **Card White** (card): Form card and the Facebook row; the only surfaces lifted off paper.
+- **Harbor Navy** (navy): Hero, services, and close bands.
+- **Night Navy** (deep): How-it-works band and footer, always with the line texture.
+- **Ink** (ink): Headings on light, text on pine, selected chips. Same value as Night Navy; it is named separately because its role is text.
+- **Slate Body** (body): Running text on light.
+- **Soft Slate** (soft): Secondary text on light (ledes, placeholders, captions, the wordmark tagline).
+- **Mist** (on-dark): Headings and labels on navy and deep navy.
+- **Soft Mist** (on-dark-soft): Running text on navy and deep navy.
+- **Focus Navy** (focus): Focus ring on light, and the hover outline or border on form controls. Same value as Harbor Navy, kept separate so it is never confused with the pine fill.
+- **Brick** (error): Field error text and error border.
+- **Hairline** (`rgba(19,36,58,.12)` on light; `rgba(255,255,255,.12)` between service rows on navy): dividers only.
 
 ### Named Rules
-**The Evergreen Ground Rule.** No black ground, anywhere. Dark surfaces are `ground` or `ground-deep`; even the shadow behind the canvas fence boards is a deep green, not black.
+**The Pine Is Wood, Not Ink Rule.** Pine (#e8b65a) is 1.7:1 on paper, so it never sets text on light surfaces. On light it is a fill with Ink text on top (8.4:1); when gold has to be read on light, use Stained Pine (6.3:1).
 
-**The Two Grounds Rule.** A section is either evergreen with `on-ground` text or cream with `ink` text. Never introduce a third surface color; transitions between the two happen only through a seam.
+**The Dark-Band Accent Rule.** The accent phrase at the end of a heading ("NJ & Philly.", "build.", "works.") appears on navy and deep-navy bands only. Headings on paper are entirely Ink.
 
-**The Ink-On-Pine Rule.** Anything filled with pine carries `ink` text, and anything filled with `ink` carries a pine glyph. Light text never sits on pine.
+**The One Warm Colour Rule.** Every other colour is a cool navy or neutral. A second warm hue, a gradient accent, or a tint of pine as a band ground breaks the system. (The Facebook glyph uses Facebook's own blue as a third-party mark, not a palette colour.)
 
 ## Typography
 
-**Display Font:** System UI stack (-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif)
-**Body Font:** the same stack
+**Display Font:** Cal Sans (with Avenir Next, Segoe UI, system-ui)
+**Body Font:** System stack (-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial)
 
-**Character:** The system stack is the owner's deliberate house style: it renders as the face the visitor's own phone uses, which reads as plain-spoken and local. Character comes from weight and case, not from a typeface: headings are black weight (900), uppercase, tracked tight (-0.02em) and set almost solid (0.95), like stenciled lumber stamps.
+**Character:** Cal Sans at its single regular weight is round, upright, and friendly, a neighbour's voice rather than a hard sell; the system body keeps paragraphs native and fast inside in-app browsers. Cal Sans loads async from Google Fonts with `display=swap`.
 
 ### Hierarchy
-- **Display** (900, clamp(2.6rem, 12.4vw, 6rem), 0.95, uppercase): the hero headline and the closer's name. Hero headline breaks into one span per line, capped at 11ch.
-- **Headline** (900, clamp(2rem, 9vw, 3.6rem), 0.95, uppercase): section headings.
-- **Title** (900, clamp(1.35rem, 6vw, 1.7rem) on service rows, 1.3rem on planks, 1 to 1.05, uppercase): row and step headings.
-- **Lead** (400, clamp(17px, 4.6vw, 20px), 1.4): the hero pitch and closer line, in `on-ground-soft`, capped at 34ch.
-- **Body** (400, 17px, 1.55): default text; ledes and area copy capped at 44 to 46ch.
-- **Body small** (400, 16px, 1.45): row descriptions and plank text.
-- **Label** (800, 17px, 0.01em): button text.
-- **Wordmark** (900, 17px, 0.04em, uppercase): the owner's name in the top bar and footer; the descriptor under it is 13px in `on-ground-soft`.
-- **Small** (700, 14px): tags and the photo caption.
-
-The customer quote is a one-off step between lead and headline (600, clamp(19px, 5vw, 24px), 1.38) with curly quotation marks.
+- **Display** (400, clamp(42px, 12vw, 80px), 1.02, max 12ch): The hero H1 only, in white on the navy hero.
+- **Headline** (400, clamp(30px, 7.6vw, 48px), 1.08): Section H2s and the close band's name. Balanced wrapping.
+- **Title** (400, clamp(21px, 5.6vw, 24px), 1.2): Display-face labels: service rows, the Facebook row, step titles (21px, 22px on desktop), the photo caption, and the work quote (clamp(19px, 5vw, 22px), 1.35).
+- **Lead** (400, clamp(17px, 4.7vw, 20px), 1.5): The hero promise (max 32ch, 40ch on desktop) and section ledes (clamp(17px, 4.6vw, 19px), max 38ch).
+- **Body** (400, 16px, 1.7): Running text and all inputs (16px so iOS never zooms). Small print is 15px (form note, quote attribution, errors).
+- **Label** (500, 14px, 0.02em): The eyebrow pill only.
+- **Button** (Cal Sans 400, 18px, 1): Buttons. Phone numbers also set in Cal Sans with tabular numerals: 17px header (20px desktop), clamp(30px, 9vw, 52px) in the close band.
 
 ### Named Rules
-**The One Family Rule.** One font stack for everything. Hierarchy is built with weight (900 / 800 / 700 / 600 / 400), case and size; never add a second family.
+**The Single Weight Rule.** Cal Sans is only ever weight 400; hierarchy comes from size, not weight. Bold appears only in body text (the promise's name, at 600).
 
-**The Uppercase Is For Headings Rule.** Uppercase is reserved for weight-900 headings and the wordmark. Body, buttons, tags and captions stay in sentence case.
+**The Numbers Stay Whole Rule.** Every phone number is `white-space: nowrap` with tabular numerals, so 267-207-8015 never breaks across lines.
 
 ## Layout
 
-Single column on phones, built for one thumb. Content sits in a centered container (max 1180px) with a 20px gutter on phones and 32px from 760px up. Vertical rhythm is loose: sections pad 56 to 70px at the bottom on phones and up to 90px on desktop; stacks inside use 12px (button groups), 14px (plank list, area stack), 22 to 26px (headline to actions).
+A single centred column (max 1160px) with a 20px gutter on phones and 40px from 760px. Bands are full width with 64px vertical padding, 96px from 760px; the hero is taller (64/72px, 96/112px on desktop). Inside a band, stacks step in a small set of gaps: 12px between buttons, 16-20px between heading parts, 24-32px between groups.
 
-**Breakpoints.** The phone layout is the base. One structural breakpoint at **760px** (min-width in CSS, the matching max-width 759px in script) switches: button groups from stacked grid to wrapped row; short button labels to wide labels that include the phone number; the header call link appears; proof becomes a two-column grid (text left, frame right, 300 to 400px); services become a 0.9fr / 1.1fr split with 56px gap; planks become three columns with the number moved above the text; the sticky bar is removed. A second, minor step at 1100px only lifts the photo frame higher over the fence.
+Breakpoints: 760px (wider gutter and bands, hero buttons side by side at min 240px, service rows in two columns with a 56px column gap) and 1024px (photo and quote side by side, form heading sticky beside the form card at 1:1.2, close band splits name and big number, steps in three columns). Small-phone tweaks at 399px and 379px shrink the header wordmark and phone number and finally drop the phone icon, so the header never wraps.
 
-**The fence as layout.** The hero is at least 100svh: wordmark, headline, pitch, buttons, then a fence zone that takes the remaining height (min 150px; 34vh on desktop). The first light section's photo frame overlaps upward into the fence (-118px phone, -430px desktop, -600px at 1100px+). The closer repeats the fence at the bottom (min 170px).
+Band order is fixed by the house style: paper header, textured navy hero, paper work, navy services, textured deep-navy steps, paper form, navy close, textured deep-navy footer. No two adjacent bands share a ground.
 
 ### Named Rules
-**The Thumb First Rule.** The primary action is visible without scrolling on a phone, and once the hero buttons scroll away a fixed bottom bar (Text, Call) slides up; it hides again when the closer's buttons are on screen. Every tap target is at least 44px; buttons are 58px tall.
-
-**The Same Fence Twice Rule.** The page opens and closes on the living fence. Copy sits above the fence, never on top of the boards.
+**The Alternating Boards Rule.** Bands alternate light and dark; the faint line texture lives only on the hero and deep-navy bands, at `repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.035) 22px 23px)`. It is a house feature, kept quiet enough to read as grain, not pattern.
 
 ## Elevation & Depth
 
-Depth is physical: lumber sits on the yard, cast by a soft sun from above. Shadows are lifts, not outlines; each has zero horizontal offset, a downward y-offset, a large blur and a negative spread so it pools under the object. Shadows on cream are evergreen-tinted; on evergreen they are low-alpha dark. Seams and the hero gradient give the only tonal layering.
+Mostly flat. Bands are separated by colour, not shadow. Only three things lift: the work photo card, the Facebook row under it, and the floating text circle. Each uses a soft, low-opacity navy shadow with a negative spread so it reads as a gentle contact shadow rather than a frame. The form card sits on paper by tone alone (white on paper), with no shadow.
 
 ### Shadow Vocabulary
-- **Button lift** (`0 8px 18px -10px rgba(8,20,16,.7)`): primary button at rest; deepens on hover to `0 12px 24px -12px rgba(8,20,16,.8)`.
-- **Frame hang** (`0 26px 50px -22px rgba(21,44,37,.65), 0 6px 14px -6px rgba(21,44,37,.35)`): the photo frame hanging over the fence; the deepest shadow on the page.
-- **Plank lift** (`0 18px 30px -18px rgba(0,0,0,.55)`): step planks on the evergreen band.
-- **Bar cast** (`0 -10px 30px -12px rgba(0,0,0,.5)`): the sticky bar, cast upward.
+- **Photo lift** (`box-shadow: 0 18px 40px -18px rgba(19,36,58,.45)`): The 4:5 work photo card.
+- **Row lift** (`box-shadow: 0 10px 28px -16px rgba(19,36,58,.35)`): The white Facebook row under the photo.
+- **Float lift** (`box-shadow: 0 10px 28px rgba(8,24,46,.3)`): The floating text circle, which must separate from any band it passes over.
 
 ### Named Rules
-**The Lifted Not Offset Rule.** Shadows have zero x-offset and negative spread. No hard-edged or diagonally offset shadows, no borders standing in for elevation.
+**The Tone Before Shadow Rule.** New surfaces separate by ground colour first (white card on paper, paper field in white card). A shadow is added only to something that sits on top of content, like the photo or the floating circle; never a hard offset shadow.
 
 ## Shapes
 
-The form language is boards: rectangles with modest, worked corners. Controls round at 14px, the photo frame at 12px, planks at 10px, the photo inside its frame at 5px. Circles are reserved for hardware: the 36px plank number and the 44px arrow disc are both ink circles carrying pine glyphs. Tags are full pills. Lines are 2px (button borders, row rules). Leaning is part of the shape: the photo frame rests rotated (-1.6deg on phones, 2deg from 760px up) and planks and frame sway about ±0.35deg.
-
-**Seams.** Every change between evergreen and cream happens through a 46px seam: three wavy grain lines (outer `pine-deep` 2px at 75%, middle `pine` 3.5px, inner `pine-dark` 1.6px at 60%) with the next section's color filled below the middle line. There are no straight horizontal section edges.
-
-### Named Rules
-**The Seam Rule.** Section boundaries are grain, never a straight edge or a divider line.
+Soft and round throughout. Cards and the photo are 24px; the Facebook row is a slightly tighter 20px; fields are 10px; buttons, chips, and the eyebrow are full pills; arrow buttons, step numbers, and the floating action are perfect circles. No borders on cards. Lines appear only as hairline dividers between service rows and as the 2px transparent border every button, field, and chip carries so hover and error borders don't shift layout.
 
 ## Components
 
 ### Buttons
-Chunky and tactile, sized for a thumb. Primary and secondary are one component that differ only in fill.
-- **Shape:** rounded board (14px), 58px min height, 22px side padding, 2px border, 10px gap between the 22px stroke icon and label.
-- **Primary (Text):** pine fill, ink label, pine border (weathered pine border on cream), button lift shadow. Always the `sms:` action with a pre-filled message.
-- **Secondary (Call / Text your town):** transparent with a pine border; label is `on-ground` on evergreen, `ink` with a `pine-deep` border on cream.
-- **Hover (hover-capable pointers only):** primary to `pine-hi` with a deeper lift; secondary gains a 12% pine wash. Transitions 0.18s on cubic-bezier(.2,.8,.2,1).
-- **Press:** scales to 0.97.
-- **Focus:** 3px `pine-hi` outline at 3px offset, 8px radius (global).
-- **Labels:** phones get a short label (Text for a free estimate / Call Anthony); 760px+ swaps in the wide label with the number.
+Big, round, thumb-sized.
+- **Shape:** Full pill (999px), 56px tall, 26px side padding, Cal Sans 18px, optional 20px inline SVG icon at a 10px gap.
+- **Primary:** Pine fill, Ink text. Used for "Get a free estimate" and the form submit (full width in the form).
+- **Ghost:** Transparent with a 2px Mist border at 70% and Mist text; dark bands only ("Text Anthony" in the hero).
+- **Hover / Focus:** Hover only with a real pointer (`hover: hover`). Primary goes to Sunlit Pine; ghost goes to a solid white border and a 10% white wash; the form submit also gains the 3px Focus Navy outline. Press scales to 0.98. Focus is a 3px ring offset 3px, Focus Navy on light and pine on dark.
 
-### Chips (tags)
-- **Style:** `cream-deep` pill, ink 14px/700 text, 5px by 10px padding, 6px gap, wrapping.
-- **State:** static scope hints only; not interactive.
+### Eyebrow pill (house choice)
+A quiet label above the hero H1 and a few section headings ("Free estimates", "Any job, big or small", "Text me a photo"), never every heading. 14px/500 system text, 9px by 14px padding, pill, with a 7px pine dot. On light: Ink on a 6% ink wash; on dark: Mist on a 12% white wash. It is a `span`, not a heading and not a control: no arrow, no hover, no shadow, no full pine fill. Ellie chose these for the calm band style; Impeccable's craft floor flags eyebrows, and this is recorded as a deliberate house exception, not a general licence.
 
-### Service rows
-Whole rows are the links. Each row is a title, a one-line description and an ink arrow disc on the right, separated by 2px `cream-deep` rules top and bottom. Min height 64px, 20px vertical padding. Hover tints the row with an 18% pine wash and slides the disc 4px right (0.25s, same easing). Tapping opens a pre-filled text for that job.
+### Chips
+- **Style:** Pill, 48px tall, 18px side padding (14px under 380px), paper ground, Ink 16px system text, 2px transparent border. They are visually styled radio labels for the job type.
+- **State:** Selected turns solid Ink with white text. Hover and keyboard focus show the 3px Focus Navy outline offset 2px.
+
+### Cards / Containers
+- **Corner Style:** 24px.
+- **Background:** Card white on paper (form); navy behind the photo while it loads.
+- **Shadow Strategy:** See Elevation; the form has none, the photo and Facebook row have their own soft lift.
+- **Border:** None.
+- **Internal Padding:** clamp(20px, 5vw, 32px), 20px between fields.
+
+### Inputs / Fields
+- **Style:** Paper fill inside the white card, 2px transparent border, 10px radius, 52px minimum height (textarea 110px, vertical resize), 16px system text, navy caret. Labels are Cal Sans 17px Ink; "(optional)" is 14px Soft Slate.
+- **Focus:** Border turns Focus Navy; no glow. Hover (pointer only) shows the same border.
+- **Error:** Border and a 15px message turn Brick; the field is marked `aria-invalid` and focus moves to the first bad field. The error clears as soon as the visitor types.
 
 ### Navigation
-- **Top bar:** wordmark (name over a 13px descriptor) on the left; from 760px a `pine-hi` call link with icon on the right. No menu.
-- **Sticky contact bar (phones):** fixed bottom, `ground-deep` at 94%, safe-area padding, primary Text button flexing to fill and a compact Call button. Slides in from below (translateY 110% to 0, 0.35s). Removed at 760px+.
+- **Header:** Paper, 64px (76px desktop). Wordmark left (Cal Sans 21px, 24px desktop, over a 12px uppercase Soft Slate tagline); tap-to-call number top right in Cal Sans with a Stained Pine phone icon, turning Stained Pine on hover. No menu.
+- **Footer:** Textured deep navy, Soft Mist text, Mist links at a 44px tap height that turn pine on hover; bottom padding clears the floating circle and the safe area.
 
-### Photo frame (signature)
-The owner's real job photo mounted in a procedural pine frame with knots: 12px padding, 12px corner, frame hang shadow, bold 14px caption in ink beneath. Max 340px on phones, 300 to 400px column on desktop. Rests at a slight lean and springs away from a nearby pointer.
+### Work photo card (signature)
+His own job photo at 4:5, 24px radius, max 520px, served from `fence.webp` (1080w) and `fence-640.webp` (640w) via srcset, lazy-loaded. A bottom 42% scrim of deep navy carries a white Cal Sans caption. Beside it (or above, on phones) his Facebook quote is set in Cal Sans as a pull quote with a small "From my Facebook post" attribution. Under the photo sits the Facebook row: a white 76px pill-cornered row with the Facebook glyph, a Cal Sans label, and an arrow circle.
 
-### Plank (signature)
-Each estimate step is a pine plank (knot-free procedural texture, so text sits cleanly), 10px corner, plank lift, ink text, with an ink number disc pinned top-left. Phones: number left, 70px text indent. 760px+: three across, number on top, 74px top padding. Planks lean and shift away from a nearby pointer.
+### Service rows (signature)
+Each service is a full-width link row on navy, 68px minimum, Cal Sans title, hairline-divided, two columns from 760px. Only the 44px arrow circle on the right changes: it fills pine with Ink arrow on hover or focus. The row itself never highlights, underlines, or shifts. Clicking a row pre-selects the matching job chip and pre-fills the note.
 
-### Living fence (signature)
-A canvas fence fills the bottom of the hero and closer: horizontal procedural pine boards with shadow gaps, front posts with screw heads every 150px (phone) or 270px (desktop), a slow sun sheen gliding across, and floating sawdust motes. Boards bow between posts on three layered sine waves (ambient amplitude 1.4px phone / 1.8px desktop at 2.4 rad/s), are pushed by a finger or mouse within 80px / 120px and spring back (stiffness 38, damping 6.5, max 14px); fast swipes knock loose sawdust (capped 70 / 150 particles). Before the script runs, a striped pine-and-shadow gradient stands in. Full constants live in the sidecar.
+### Numbered steps
+Three steps on textured deep navy, each a 48px pine circle numbered in Cal Sans 20px Ink, beside a Cal Sans Mist title and a Soft Mist line. One column on phones, three from 1024px.
 
-### Motion system
-One requestAnimationFrame loop serves every animated part; each part subscribes only while its section intersects the viewport. Under `prefers-reduced-motion: reduce`, all CSS transitions are removed, the fence and seams draw a single still frame, and plank/frame lean is disabled.
+### Quote form to SMS
+The form composes a text message ("Hi Anthony, this is ...") and opens `sms:` with it. If no messages app opens within 900ms, a status block appears with an "Open in Messages" link, the number, and the composed message in a read-only textarea to copy. A Soft Slate note under the button tells the visitor to add a photo.
 
-**The One Spring Rule.** Every physical response (fence boards, plank and frame lean) uses the same spring: stiffness 38, damping 6.5. New interactive elements inherit it so everything feels like the same wood.
+### Close band
+Navy band with his name as the headline, a short "who" line, the area sentence (max 40ch), and the big tap-to-call number in Mist with a pine phone icon at 0.8em, turning pine on hover.
 
-**The Still Page Rule.** Motion is an enhancement over a complete static composition; nothing is revealed, hidden or sequenced by animation except the sticky bar.
+### Floating text circle (house choice)
+A single 60px pine circle, Ink chat icon, bottom right inside the safe area, with Float lift. It slides up (`transform .35s cubic-bezier(.2,.8,.2,1)`) once the hero leaves view and slides away while the form is on screen; it is removed without IntersectionObserver or when `CONFIG.FLOAT` is false. Never a bottom bar.
+
+### Motion
+- **H1 bounce-in (house choice):** Each hero H1 letter enters from 50px right with opacity 0, over `1s cubic-bezier(.34,1.56,.64,1)`, 20ms apart. The heading waits hidden up to 700ms (`CONFIG.H1_FONT_WAIT`) for Cal Sans, measures each word's line in the plain heading, inserts breaks so the split letters wrap identically, and restores the plain markup when the last letter lands so kerning and selection return. JS only.
+- **Fade-up:** Only blocks that start below the first screen rise 12px with opacity over 400ms ease-out, once. Everything is visible at rest.
+- **Reduced motion / no JS:** No bounce, no fade-up, no float slide, no button transitions, no smooth scroll; the plain heading shows immediately.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep every dark surface evergreen (`ground`, `ground-deep`); the darkest canvas value is a deep green.
-- **Do** put `ink` text on pine and pine glyphs on `ink` discs.
-- **Do** make the pre-filled `sms:` text the primary (pine) button and `tel:` the secondary (outlined) button, in that order.
-- **Do** join evergreen and cream sections only with the three-line grain seam (46px).
-- **Do** build headings at weight 900, uppercase, -0.02em, line-height 0.95 in the system stack.
-- **Do** keep tap targets at least 44px and primary buttons 58px tall.
-- **Do** design the phone layout first; restructure only at 760px.
-- **Do** drive any new physical motion with the shared spring (38 / 6.5) and the shared loop, gated by viewport visibility and fully disabled under reduced motion.
-- **Do** frame real photography in procedural pine rather than placing it bare.
+- **Do** alternate paper, navy, and textured deep-navy bands, and keep the 135deg line texture at 3.5% white.
+- **Do** keep pine as a fill on light with Ink text on it, and switch to Stained Pine (#7c5210) whenever gold must be read on light.
+- **Do** put the accent phrase only at the end of a heading on a dark band.
+- **Do** set every heading, button, row label, and phone number in Cal Sans 400, and body and inputs in the system stack at 16px.
+- **Do** keep the phone number reachable in the header top right, the close band, and the floating circle, unbroken and tabular.
+- **Do** keep tap targets at 44px or more (buttons 56px, chips 48px, fields 52px).
+- **Do** scope hover to `(hover: hover)` and keep focus rings visible: 3px Focus Navy on light, pine on dark.
+- **Do** make the arrow circle the only thing that changes on a link row's hover or focus.
+- **Do** use only his own photos, at card size with their provenance recorded beside the file.
+- **Do** gate every motion behind JS and reduced-motion, and wait for Cal Sans before splitting the H1.
 
 ### Don't:
-- **Don't** use black or near-black neutral grounds.
-- **Don't** add a second typeface or a webfont; the system stack is the house display face.
-- **Don't** introduce a third surface color or a straight-edged section divider.
-- **Don't** put light text on pine or pine text on cream.
-- **Don't** use hard-edged or horizontally offset shadows.
-- **Don't** place copy over the fence boards.
-- **Don't** set body, button or tag text in uppercase.
+- **Don't** set pine (#e8b65a) as text or a thin line on paper or white; it is 1.7:1.
+- **Don't** add a second warm hue or use pine as a band ground.
+- **Don't** put an eyebrow above every heading, give it hover, an arrow, a shadow, or a full pine fill, or mark it up as a heading.
+- **Don't** use hard offset shadows or shadow the form card; separate by tone first.
+- **Don't** turn the floating circle into a sticky bottom bar or show it over the form.
+- **Don't** use stock work photos or run the work photo full-bleed as the hero.
+- **Don't** bold Cal Sans or bring back a system 900 display face.
+- **Don't** add new motion beyond the H1 bounce-in, the single 12px fade-up, and the float slide.

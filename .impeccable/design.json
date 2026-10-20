@@ -1,524 +1,509 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T21:49:55.644261+00:00",
-  "title": "Design System: Anthony Nicotra — Fencing & Home Contracting",
+  "generatedAt": "2026-10-20T00:57:04.901145+00:00",
+  "title": "Design System: Anthony Nicotra · Fencing & Home Contracting",
   "extensions": {
     "colorMeta": {
-      "ground": {
+      "paper": {
         "role": "neutral",
-        "displayName": "Evergreen Yard",
-        "canonical": "#1d3a31",
-        "oklch": "oklch(32.2% 0.039 171.7)",
+        "displayName": "Cool Paper",
+        "canonical": "#f4f6fb",
+        "oklch": "oklch(97.3% 0.007 268.5)",
         "tonalRamp": [
-          "oklch(15.0% 0.031 171.7)",
-          "oklch(26.4% 0.036 171.7)",
-          "oklch(37.9% 0.036 171.7)",
-          "oklch(49.3% 0.031 171.7)",
-          "oklch(60.7% 0.026 171.7)",
-          "oklch(72.1% 0.020 171.7)",
-          "oklch(83.6% 0.015 171.7)",
-          "oklch(95.0% 0.010 171.7)"
+          "oklch(15.0% 0.002 268.5)",
+          "oklch(26.4% 0.002 268.5)",
+          "oklch(37.9% 0.002 268.5)",
+          "oklch(49.3% 0.003 268.5)",
+          "oklch(60.7% 0.004 268.5)",
+          "oklch(72.1% 0.005 268.5)",
+          "oklch(83.6% 0.006 268.5)",
+          "oklch(95.0% 0.007 268.5)"
         ]
       },
-      "ground-deep": {
+      "card": {
         "role": "neutral",
-        "displayName": "Deep Evergreen",
-        "canonical": "#152c25",
-        "oklch": "oklch(27.2% 0.032 172.2)",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
         "tonalRamp": [
-          "oklch(15.0% 0.028 172.2)",
-          "oklch(26.4% 0.032 172.2)",
-          "oklch(37.9% 0.028 172.2)",
-          "oklch(49.3% 0.024 172.2)",
-          "oklch(60.7% 0.019 172.2)",
-          "oklch(72.1% 0.015 172.2)",
-          "oklch(83.6% 0.010 172.2)",
-          "oklch(95.0% 0.008 172.2)"
-        ]
-      },
-      "ground-up": {
-        "role": "neutral",
-        "displayName": "Lifted Evergreen",
-        "canonical": "#24463b",
-        "oklch": "oklch(36.5% 0.045 170.8)",
-        "tonalRamp": [
-          "oklch(15.0% 0.033 170.8)",
-          "oklch(26.4% 0.039 170.8)",
-          "oklch(37.9% 0.044 170.8)",
-          "oklch(49.3% 0.038 170.8)",
-          "oklch(60.7% 0.032 170.8)",
-          "oklch(72.1% 0.025 170.8)",
-          "oklch(83.6% 0.019 170.8)",
-          "oklch(95.0% 0.013 170.8)"
-        ]
-      },
-      "cream": {
-        "role": "neutral",
-        "displayName": "Sawn Cream",
-        "canonical": "#f5ead6",
-        "oklch": "oklch(94.0% 0.029 82.6)",
-        "tonalRamp": [
-          "oklch(15.0% 0.007 82.6)",
-          "oklch(26.4% 0.007 82.6)",
-          "oklch(37.9% 0.009 82.6)",
-          "oklch(49.3% 0.013 82.6)",
-          "oklch(60.7% 0.017 82.6)",
-          "oklch(72.1% 0.021 82.6)",
-          "oklch(83.6% 0.025 82.6)",
-          "oklch(95.0% 0.029 82.6)"
-        ]
-      },
-      "cream-deep": {
-        "role": "neutral",
-        "displayName": "Sawdust Cream",
-        "canonical": "#ead9bb",
-        "oklch": "oklch(89.1% 0.044 81.9)",
-        "tonalRamp": [
-          "oklch(15.0% 0.011 81.9)",
-          "oklch(26.4% 0.011 81.9)",
-          "oklch(37.9% 0.017 81.9)",
-          "oklch(49.3% 0.023 81.9)",
-          "oklch(60.7% 0.029 81.9)",
-          "oklch(72.1% 0.035 81.9)",
-          "oklch(83.6% 0.041 81.9)",
-          "oklch(95.0% 0.041 81.9)"
-        ]
-      },
-      "pine": {
-        "role": "primary",
-        "displayName": "Fresh Pressure-Treated Pine",
-        "canonical": "#e6bf80",
-        "oklch": "oklch(82.5% 0.092 78.9)",
-        "tonalRamp": [
-          "oklch(15.0% 0.023 78.9)",
-          "oklch(26.4% 0.030 78.9)",
-          "oklch(37.9% 0.043 78.9)",
-          "oklch(49.3% 0.055 78.9)",
-          "oklch(60.7% 0.068 78.9)",
-          "oklch(72.1% 0.081 78.9)",
-          "oklch(83.6% 0.091 78.9)",
-          "oklch(95.0% 0.078 78.9)"
-        ]
-      },
-      "pine-hi": {
-        "role": "primary",
-        "displayName": "Sunlit Pine",
-        "canonical": "#f0d09a",
-        "oklch": "oklch(87.2% 0.078 80.4)",
-        "tonalRamp": [
-          "oklch(15.0% 0.020 80.4)",
-          "oklch(26.4% 0.021 80.4)",
-          "oklch(37.9% 0.032 80.4)",
-          "oklch(49.3% 0.043 80.4)",
-          "oklch(60.7% 0.053 80.4)",
-          "oklch(72.1% 0.064 80.4)",
-          "oklch(83.6% 0.075 80.4)",
-          "oklch(95.0% 0.071 80.4)"
-        ]
-      },
-      "pine-deep": {
-        "role": "primary",
-        "displayName": "Weathered Pine",
-        "canonical": "#b98a4e",
-        "oklch": "oklch(66.6% 0.096 71.6)",
-        "tonalRamp": [
-          "oklch(15.0% 0.037 71.6)",
-          "oklch(26.4% 0.050 71.6)",
-          "oklch(37.9% 0.063 71.6)",
-          "oklch(49.3% 0.076 71.6)",
-          "oklch(60.7% 0.089 71.6)",
-          "oklch(72.1% 0.090 71.6)",
-          "oklch(83.6% 0.077 71.6)",
-          "oklch(95.0% 0.064 71.6)"
-        ]
-      },
-      "pine-dark": {
-        "role": "primary",
-        "displayName": "Pine Heartwood",
-        "canonical": "#7a5530",
-        "oklch": "oklch(48.1% 0.072 64.7)",
-        "tonalRamp": [
-          "oklch(15.0% 0.043 64.7)",
-          "oklch(26.4% 0.053 64.7)",
-          "oklch(37.9% 0.063 64.7)",
-          "oklch(49.3% 0.071 64.7)",
-          "oklch(60.7% 0.061 64.7)",
-          "oklch(72.1% 0.051 64.7)",
-          "oklch(83.6% 0.041 64.7)",
-          "oklch(95.0% 0.031 64.7)"
+          "oklch(15.0% 0.000 89.9)",
+          "oklch(26.4% 0.000 89.9)",
+          "oklch(37.9% 0.000 89.9)",
+          "oklch(49.3% 0.000 89.9)",
+          "oklch(60.7% 0.000 89.9)",
+          "oklch(72.1% 0.000 89.9)",
+          "oklch(83.6% 0.000 89.9)",
+          "oklch(95.0% 0.000 89.9)"
         ]
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Ink Green",
-        "canonical": "#1c2a24",
-        "oklch": "oklch(27.0% 0.022 166.4)",
+        "displayName": "Ink",
+        "canonical": "#13243a",
+        "oklch": "oklch(25.8% 0.048 255.5)",
         "tonalRamp": [
-          "oklch(15.0% 0.019 166.4)",
-          "oklch(26.4% 0.022 166.4)",
-          "oklch(37.9% 0.019 166.4)",
-          "oklch(49.3% 0.016 166.4)",
-          "oklch(60.7% 0.013 166.4)",
-          "oklch(72.1% 0.010 166.4)",
-          "oklch(83.6% 0.007 166.4)",
-          "oklch(95.0% 0.006 166.4)"
+          "oklch(15.0% 0.041 255.5)",
+          "oklch(26.4% 0.047 255.5)",
+          "oklch(37.9% 0.041 255.5)",
+          "oklch(49.3% 0.034 255.5)",
+          "oklch(60.7% 0.028 255.5)",
+          "oklch(72.1% 0.021 255.5)",
+          "oklch(83.6% 0.015 255.5)",
+          "oklch(95.0% 0.012 255.5)"
         ]
       },
-      "ink-soft": {
+      "body": {
         "role": "neutral",
-        "displayName": "Moss Ink",
-        "canonical": "#4a5a50",
-        "oklch": "oklch(45.1% 0.026 157.8)",
+        "displayName": "Slate Body",
+        "canonical": "#2a3a4c",
+        "oklch": "oklch(34.3% 0.038 251.9)",
         "tonalRamp": [
-          "oklch(15.0% 0.016 157.8)",
-          "oklch(26.4% 0.020 157.8)",
-          "oklch(37.9% 0.023 157.8)",
-          "oklch(49.3% 0.024 157.8)",
-          "oklch(60.7% 0.021 157.8)",
-          "oklch(72.1% 0.017 157.8)",
-          "oklch(83.6% 0.014 157.8)",
-          "oklch(95.0% 0.010 157.8)"
+          "oklch(15.0% 0.029 251.9)",
+          "oklch(26.4% 0.035 251.9)",
+          "oklch(37.9% 0.036 251.9)",
+          "oklch(49.3% 0.031 251.9)",
+          "oklch(60.7% 0.026 251.9)",
+          "oklch(72.1% 0.021 251.9)",
+          "oklch(83.6% 0.016 251.9)",
+          "oklch(95.0% 0.010 251.9)"
         ]
       },
-      "on-ground": {
+      "soft": {
         "role": "neutral",
-        "displayName": "Evening Light",
-        "canonical": "#f4ecdc",
-        "oklch": "oklch(94.5% 0.023 84.6)",
+        "displayName": "Soft Slate",
+        "canonical": "#4a5868",
+        "oklch": "oklch(45.5% 0.032 251.9)",
         "tonalRamp": [
-          "oklch(15.0% 0.006 84.6)",
-          "oklch(26.4% 0.006 84.6)",
-          "oklch(37.9% 0.007 84.6)",
-          "oklch(49.3% 0.010 84.6)",
-          "oklch(60.7% 0.014 84.6)",
-          "oklch(72.1% 0.017 84.6)",
-          "oklch(83.6% 0.020 84.6)",
-          "oklch(95.0% 0.023 84.6)"
+          "oklch(15.0% 0.020 251.9)",
+          "oklch(26.4% 0.024 251.9)",
+          "oklch(37.9% 0.029 251.9)",
+          "oklch(49.3% 0.030 251.9)",
+          "oklch(60.7% 0.026 251.9)",
+          "oklch(72.1% 0.021 251.9)",
+          "oklch(83.6% 0.017 251.9)",
+          "oklch(95.0% 0.013 251.9)"
         ]
       },
-      "on-ground-soft": {
+      "navy": {
         "role": "neutral",
-        "displayName": "Sage",
-        "canonical": "#c9d6c6",
-        "oklch": "oklch(86.2% 0.026 139.8)",
+        "displayName": "Harbor Navy",
+        "canonical": "#1f4166",
+        "oklch": "oklch(36.9% 0.075 252.3)",
         "tonalRamp": [
-          "oklch(15.0% 0.006 139.8)",
-          "oklch(26.4% 0.007 139.8)",
-          "oklch(37.9% 0.011 139.8)",
-          "oklch(49.3% 0.014 139.8)",
-          "oklch(60.7% 0.018 139.8)",
-          "oklch(72.1% 0.022 139.8)",
-          "oklch(83.6% 0.025 139.8)",
-          "oklch(95.0% 0.023 139.8)"
+          "oklch(15.0% 0.056 252.3)",
+          "oklch(26.4% 0.066 252.3)",
+          "oklch(37.9% 0.075 252.3)",
+          "oklch(49.3% 0.064 252.3)",
+          "oklch(60.7% 0.054 252.3)",
+          "oklch(72.1% 0.044 252.3)",
+          "oklch(83.6% 0.033 252.3)",
+          "oklch(95.0% 0.023 252.3)"
+        ]
+      },
+      "deep": {
+        "role": "neutral",
+        "displayName": "Night Navy",
+        "canonical": "#13243a",
+        "oklch": "oklch(25.8% 0.048 255.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.041 255.5)",
+          "oklch(26.4% 0.047 255.5)",
+          "oklch(37.9% 0.041 255.5)",
+          "oklch(49.3% 0.034 255.5)",
+          "oklch(60.7% 0.028 255.5)",
+          "oklch(72.1% 0.021 255.5)",
+          "oklch(83.6% 0.015 255.5)",
+          "oklch(95.0% 0.012 255.5)"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "#f4f7fb",
+        "oklch": "oklch(97.5% 0.006 255.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.002 255.5)",
+          "oklch(26.4% 0.002 255.5)",
+          "oklch(37.9% 0.002 255.5)",
+          "oklch(49.3% 0.003 255.5)",
+          "oklch(60.7% 0.003 255.5)",
+          "oklch(72.1% 0.004 255.5)",
+          "oklch(83.6% 0.005 255.5)",
+          "oklch(95.0% 0.006 255.5)"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Soft Mist",
+        "canonical": "#c9d6e6",
+        "oklch": "oklch(87.1% 0.026 253.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 253.6)",
+          "oklch(26.4% 0.007 253.6)",
+          "oklch(37.9% 0.011 253.6)",
+          "oklch(49.3% 0.014 253.6)",
+          "oklch(60.7% 0.018 253.6)",
+          "oklch(72.1% 0.022 253.6)",
+          "oklch(83.6% 0.025 253.6)",
+          "oklch(95.0% 0.024 253.6)"
+        ]
+      },
+      "pine": {
+        "role": "primary",
+        "displayName": "Pressure-Treated Pine",
+        "canonical": "#e8b65a",
+        "oklch": "oklch(80.4% 0.124 80.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 80.7)",
+          "oklch(26.4% 0.044 80.7)",
+          "oklch(37.9% 0.061 80.7)",
+          "oklch(49.3% 0.078 80.7)",
+          "oklch(60.7% 0.095 80.7)",
+          "oklch(72.1% 0.112 80.7)",
+          "oklch(83.6% 0.119 80.7)",
+          "oklch(95.0% 0.102 80.7)"
+        ]
+      },
+      "pine-2": {
+        "role": "primary",
+        "displayName": "Sunlit Pine",
+        "canonical": "#f0c878",
+        "oklch": "oklch(85.1% 0.109 83.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.027 83.6)",
+          "oklch(26.4% 0.032 83.6)",
+          "oklch(37.9% 0.047 83.6)",
+          "oklch(49.3% 0.062 83.6)",
+          "oklch(60.7% 0.077 83.6)",
+          "oklch(72.1% 0.092 83.6)",
+          "oklch(83.6% 0.107 83.6)",
+          "oklch(95.0% 0.096 83.6)"
+        ]
+      },
+      "pine-ink": {
+        "role": "primary",
+        "displayName": "Stained Pine",
+        "canonical": "#7c5210",
+        "oklch": "oklch(47.4% 0.094 72.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.058 72.4)",
+          "oklch(26.4% 0.071 72.4)",
+          "oklch(37.9% 0.084 72.4)",
+          "oklch(49.3% 0.092 72.4)",
+          "oklch(60.7% 0.079 72.4)",
+          "oklch(72.1% 0.066 72.4)",
+          "oklch(83.6% 0.053 72.4)",
+          "oklch(95.0% 0.040 72.4)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus Navy",
+        "canonical": "#1f4166",
+        "oklch": "oklch(36.9% 0.075 252.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.056 252.3)",
+          "oklch(26.4% 0.066 252.3)",
+          "oklch(37.9% 0.075 252.3)",
+          "oklch(49.3% 0.064 252.3)",
+          "oklch(60.7% 0.054 252.3)",
+          "oklch(72.1% 0.044 252.3)",
+          "oklch(83.6% 0.033 252.3)",
+          "oklch(95.0% 0.023 252.3)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Brick",
+        "canonical": "#b3261e",
+        "oklch": "oklch(50.1% 0.178 28.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.103 28.7)",
+          "oklch(26.4% 0.128 28.7)",
+          "oklch(37.9% 0.152 28.7)",
+          "oklch(49.3% 0.177 28.7)",
+          "oklch(60.7% 0.156 28.7)",
+          "oklch(72.1% 0.131 28.7)",
+          "oklch(83.6% 0.107 28.7)",
+          "oklch(95.0% 0.082 28.7)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero headline and closer name. Uppercase, max 11ch in the hero; the hero's second half is set in pine."
+        "purpose": "Hero H1 only; letter bounce-in when motion is allowed."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section headings. Uppercase."
+        "purpose": "Section H2s and the close band name."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Service row and step headings (planks use 1.3rem / 1.05). Uppercase."
+        "purpose": "Cal Sans labels: service rows, Facebook row, step titles, photo caption, pull quote."
       },
       "lead": {
         "displayName": "Lead",
-        "purpose": "Hero pitch and closer line in on-ground-soft, max 34ch."
+        "purpose": "Hero promise and section ledes."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Default text; ledes capped at 44-46ch."
-      },
-      "body-sm": {
-        "displayName": "Body small",
-        "purpose": "Row descriptions and plank text."
+        "purpose": "Running text and all inputs at 16px."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Button labels, sentence case."
+        "purpose": "Eyebrow pill only."
       },
-      "wordmark": {
-        "displayName": "Wordmark",
-        "purpose": "Owner's name in top bar and footer. Uppercase."
-      },
-      "small": {
-        "displayName": "Small",
-        "purpose": "Tags and the photo caption."
+      "button": {
+        "displayName": "Button",
+        "purpose": "Pill buttons; phone numbers share the face with tabular numerals."
       }
     },
+    "textures": [
+      {
+        "name": "band-lines",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Hero, deep-navy steps band and footer only."
+      }
+    ],
     "shadows": [
       {
-        "name": "button-lift",
-        "value": "0 8px 18px -10px rgba(8,20,16,.7)",
-        "purpose": "Primary button at rest."
+        "name": "photo-lift",
+        "value": "0 18px 40px -18px rgba(19,36,58,.45)",
+        "purpose": "The 4:5 work photo card."
       },
       {
-        "name": "button-lift-hover",
-        "value": "0 12px 24px -12px rgba(8,20,16,.8)",
-        "purpose": "Primary button hover."
+        "name": "row-lift",
+        "value": "0 10px 28px -16px rgba(19,36,58,.35)",
+        "purpose": "The white Facebook row under the photo."
       },
       {
-        "name": "frame-hang",
-        "value": "0 26px 50px -22px rgba(21,44,37,.65), 0 6px 14px -6px rgba(21,44,37,.35)",
-        "purpose": "Photo frame hanging over the fence; deepest shadow."
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(8,24,46,.3)",
+        "purpose": "The floating text circle over any band."
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-light",
+        "value": "outline: 3px solid #1f4166; outline-offset: 3px",
+        "purpose": "Focus on paper and white; also hover outline on chips and the form submit."
       },
       {
-        "name": "plank-lift",
-        "value": "0 18px 30px -18px rgba(0,0,0,.55)",
-        "purpose": "Step planks on the evergreen band."
-      },
-      {
-        "name": "bar-cast",
-        "value": "0 -10px 30px -12px rgba(0,0,0,.5)",
-        "purpose": "Sticky contact bar, cast upward."
+        "name": "focus-dark",
+        "value": "outline: 3px solid #e8b65a; outline-offset: 3px",
+        "purpose": "Focus on navy, deep navy, hero and footer."
       }
     ],
     "motion": [
       {
-        "name": "ease-out-board",
-        "value": "cubic-bezier(.2,.8,.2,1)",
-        "purpose": "All CSS state transitions."
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), translateX(50px) to 0, opacity 0 to 1, 20ms stagger",
+        "purpose": "Hero H1 bounce-in; waits up to 700ms for Cal Sans, keeps the plain heading's line breaks, restores plain markup after. JS only, off under reduced motion."
       },
       {
-        "name": "duration-control",
-        "value": "180ms",
-        "purpose": "Button background, shadow and press transitions."
+        "name": "rise",
+        "value": "opacity and translateY(12px), .4s ease-out",
+        "purpose": "One-time fade-up for .rise blocks that start below the first screen; off without JS or under reduced motion."
       },
       {
-        "name": "duration-row",
-        "value": "200ms",
-        "purpose": "Service row hover wash."
+        "name": "float-slide",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1), from translateY(120px)",
+        "purpose": "Floating text circle entering after the hero and leaving over the form."
       },
       {
-        "name": "duration-disc",
-        "value": "250ms",
-        "purpose": "Arrow disc slide (translateX 4px) on row hover."
-      },
-      {
-        "name": "duration-bar",
-        "value": "350ms",
-        "purpose": "Sticky bar slide in/out (translateY 110% to 0)."
-      },
-      {
-        "name": "press-scale",
-        "value": "0.97",
-        "purpose": "Button :active scale."
-      },
-      {
-        "name": "spring",
-        "value": "stiffness 38, damping 6.5",
-        "purpose": "Shared spring for fence boards and plank/frame lean (The One Spring Rule)."
-      },
-      {
-        "name": "fence-cfg-phone",
-        "value": "boardH 30, gap 5, postEvery 150, postW 13, slice 4, waveAmp 1.4, waveSpeed 2.4 rad/s, pushR 80, push 4200, carry 44, spring 38, damp 6.5, maxOff 14, dust 34, burstMax 70, sheen 70px/s",
-        "purpose": "Living fence constants below 760px."
-      },
-      {
-        "name": "fence-cfg-desktop",
-        "value": "boardH 40, gap 6, postEvery 270, postW 17, slice 5, waveAmp 1.8, waveSpeed 2.4 rad/s, pushR 120, push 4200, carry 44, spring 38, damp 6.5, maxOff 14, dust 80, burstMax 150, sheen 70px/s",
-        "purpose": "Living fence constants at 760px and up."
-      },
-      {
-        "name": "seam-wave",
-        "value": "height 46px; lines at y 13/23/33 (viewBox 1200x46); STEP 20, SWELL 7, RIPPLE 2.6, SPEED 2.2 rad/s; per-seam phase 1.7",
-        "purpose": "Animated grain seams; fill follows the middle line."
-      },
-      {
-        "name": "lean",
-        "value": "radius 60px phone / 220px desktop (plus half element width); rotation clamp ±6deg; idle sway ±0.35deg at 1.3 rad/s; frame base -1.6deg phone / 2deg desktop",
-        "purpose": "Planks and photo frame lean and shift away from the pointer."
-      },
-      {
-        "name": "reduced-motion",
-        "value": "prefers-reduced-motion: reduce",
-        "purpose": "Removes all transitions; fence and seams draw one still frame; lean disabled."
-      },
-      {
-        "name": "loop",
-        "value": "single requestAnimationFrame, dt capped 50ms, IntersectionObserver-gated",
-        "purpose": "Every animated part subscribes only while visible."
+        "name": "state",
+        "value": "background-color, color, border-color .2s; fields and chips .15s; press scale(.98) .12s",
+        "purpose": "Hover and press transitions; hover only under (hover: hover)."
       }
     ],
     "breakpoints": [
       {
-        "name": "wide",
-        "value": "760px",
-        "purpose": "Only structural breakpoint (min-width; scripts use max-width 759px for phone constants)."
+        "name": "xs",
+        "value": "379px",
+        "purpose": "Header phone icon hidden at or below."
       },
       {
-        "name": "xl",
-        "value": "1100px",
-        "purpose": "Only lifts the photo frame higher (margin-top -600px)."
+        "name": "sm",
+        "value": "399px",
+        "purpose": "Header wordmark and number shrink at or below."
+      },
+      {
+        "name": "md",
+        "value": "760px",
+        "purpose": "40px gutter, 96px bands, side-by-side hero buttons, two-column service rows."
+      },
+      {
+        "name": "lg",
+        "value": "1024px",
+        "purpose": "Photo beside quote, sticky form heading, split close band, three-column steps."
       }
-    ]
+    ],
+    "assets": [
+      {
+        "file": "fence.webp",
+        "size": "1080x1350",
+        "provenance": "Anthony Nicotra's own job photo from his Facebook group posts (2026-10-08), cropped to remove the text banner; see fence.webp.json."
+      },
+      {
+        "file": "fence-640.webp",
+        "size": "640x800",
+        "provenance": "Same crop resized for phones; see fence-640.webp.json."
+      }
+    ],
+    "stack": "Single-file static HTML/CSS/JS (index.html), no frameworks; Cal Sans from Google Fonts loaded async with display=swap."
   },
   "components": [
     {
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Pre-filled text for a free estimate; always the first action.",
-      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\"><path d=\"M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 3.5V17.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z\"/><path d=\"M7.5 10.5h9M7.5 13.5h5.5\"/></svg>Text for a free estimate</a>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 22px;border-radius:14px;border:2px solid #e6bf80;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:17px;letter-spacing:.01em;text-decoration:none;transition:transform .18s cubic-bezier(.2,.8,.2,1),background-color .18s,box-shadow .18s}.ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.ds-btn-primary{background:#e6bf80;color:#1c2a24;box-shadow:0 8px 18px -10px rgba(8,20,16,.7)}.ds-btn-primary:hover{background:#f0d09a;box-shadow:0 12px 24px -12px rgba(8,20,16,.8)}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:3px solid #f0d09a;outline-offset:3px}"
+      "description": "Pine pill with Ink text; the main estimate action and the form submit.",
+      "html": "<div class=\"ds-wrap\"><a class=\"ds-btn ds-btn-primary\" href=\"#\">Get a free estimate</a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--ink:#13243a;--body:#2a3a4c;--soft:#4a5868;--navy:#1f4166;--deep:#13243a;--on-dark:#f4f7fb;--on-dark-soft:#c9d6e6;--pine:#e8b65a;--pine-2:#f0c878;--pine-ink:#7c5210;--focus:#1f4166;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-wrap{padding:24px;background:var(--navy)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn-primary{background:var(--pine);color:var(--ink);border-color:var(--pine)}.ds-btn-primary:hover{background:var(--pine-2);border-color:var(--pine-2)}.ds-btn-primary:focus-visible{outline:3px solid var(--pine);outline-offset:3px}"
     },
     {
-      "name": "Secondary Button (on evergreen)",
+      "name": "Ghost Button",
       "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "Call action; outlined in pine on the evergreen ground.",
-      "html": "<div style=\"background:#1d3a31;padding:16px\"><a class=\"ds-btn2\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\"><path d=\"M6.6 3.5 9.3 4l1.3 4-2 1.6a12.5 12.5 0 0 0 5.8 5.8l1.6-2 4 1.3.5 2.7a2 2 0 0 1-2 2.1A16.6 16.6 0 0 1 3.4 5.5a2 2 0 0 1 2.1-2Z\"/></svg>Call Anthony</a></div>",
-      "css": ".ds-btn2{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 22px;border-radius:14px;border:2px solid #e6bf80;background:transparent;color:#f4ecdc;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:17px;letter-spacing:.01em;text-decoration:none;transition:transform .18s cubic-bezier(.2,.8,.2,1),background-color .18s}.ds-btn2:hover{background:rgba(230,191,128,.12)}.ds-btn2:active{transform:scale(.97)}.ds-btn2:focus-visible{outline:3px solid #f0d09a;outline-offset:3px}.ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}"
+      "refersTo": "button-ghost",
+      "description": "Outlined pill on dark bands only; the secondary text action.",
+      "html": "<div class=\"ds-wrap\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text Anthony</a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--ink:#13243a;--body:#2a3a4c;--soft:#4a5868;--navy:#1f4166;--deep:#13243a;--on-dark:#f4f7fb;--on-dark-soft:#c9d6e6;--pine:#e8b65a;--pine-2:#f0c878;--pine-ink:#7c5210;--focus:#1f4166;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-wrap{padding:24px;background:var(--navy)}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}.ds-btn-ghost:focus-visible{outline:3px solid var(--pine);outline-offset:3px}"
     },
     {
-      "name": "Secondary Button (on cream)",
-      "kind": "button",
-      "refersTo": "button-secondary-on-cream",
-      "description": "Outlined action inside a cream section; weathered-pine border, ink label.",
-      "html": "<div style=\"background:#f5ead6;padding:16px\"><a class=\"ds-btn3\" href=\"#\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\"><path d=\"M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11Z\"/><circle cx=\"12\" cy=\"10\" r=\"2.3\"/></svg>Text your town</a></div>",
-      "css": ".ds-btn3{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 22px;border-radius:14px;border:2px solid #b98a4e;background:transparent;color:#1c2a24;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:17px;text-decoration:none;transition:transform .18s cubic-bezier(.2,.8,.2,1),background-color .18s}.ds-btn3:hover{background:rgba(230,191,128,.12)}.ds-btn3:active{transform:scale(.97)}.ds-btn3:focus-visible{outline:3px solid #f0d09a;outline-offset:3px}.ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}"
+      "name": "Eyebrow Pill",
+      "kind": "custom",
+      "refersTo": "eyebrow",
+      "description": "House-choice quiet label above a few key headings; not a control, no hover.",
+      "html": "<div class=\"ds-row\"><div class=\"ds-light\"><span class=\"ds-eyebrow\">Text me a photo</span></div><div class=\"ds-dark\"><span class=\"ds-eyebrow\">Free estimates</span></div></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--ink:#13243a;--body:#2a3a4c;--soft:#4a5868;--navy:#1f4166;--deep:#13243a;--on-dark:#f4f7fb;--on-dark-soft:#c9d6e6;--pine:#e8b65a;--pine-2:#f0c878;--pine-ink:#7c5210;--focus:#1f4166;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-row{display:flex;flex-wrap:wrap}.ds-light,.ds-dark{padding:24px}.ds-light{background:var(--paper)}.ds-dark{background:var(--navy)}.ds-eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(19,36,58,.06);padding:9px 14px;border-radius:var(--pill)}.ds-eyebrow::before{content:\"\";width:7px;height:7px;border-radius:50%;background:var(--pine)}.ds-dark .ds-eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}"
+    },
+    {
+      "name": "Job Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio labels styled as pills; selected turns solid Ink.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-chips\"><input type=\"radio\" name=\"dsj\" id=\"dsj1\" checked><label for=\"dsj1\">Fence</label><input type=\"radio\" name=\"dsj\" id=\"dsj2\"><label for=\"dsj2\">Gate</label><input type=\"radio\" name=\"dsj\" id=\"dsj3\"><label for=\"dsj3\">Deck</label></div></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--ink:#13243a;--body:#2a3a4c;--soft:#4a5868;--navy:#1f4166;--deep:#13243a;--on-dark:#f4f7fb;--on-dark-soft:#c9d6e6;--pine:#e8b65a;--pine-2:#f0c878;--pine-ink:#7c5210;--focus:#1f4166;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-card{background:var(--card);padding:24px;border-radius:var(--r-card)}.ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--paper);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chips label:hover,.ds-chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}.ds-chips input:checked+label{background:var(--ink);color:#fff}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Paper field inside the white form card; navy border on hover and focus, Brick on error.",
+      "html": "<div class=\"ds-card\"><label class=\"ds-label\" for=\"dsn\">Your name</label><input class=\"ds-input\" id=\"dsn\" type=\"text\" placeholder=\"First name is fine\"></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--ink:#13243a;--body:#2a3a4c;--soft:#4a5868;--navy:#1f4166;--deep:#13243a;--on-dark:#f4f7fb;--on-dark-soft:#c9d6e6;--pine:#e8b65a;--pine-2:#f0c878;--pine-ink:#7c5210;--focus:#1f4166;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-card{background:var(--card);padding:24px;border-radius:var(--r-card);display:grid;gap:8px}.ds-label{font:400 17px/1.2 var(--display);color:var(--ink)}.ds-input{width:100%;box-sizing:border-box;font:16px/1.4 var(--text);color:var(--ink);background:var(--paper);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}.ds-input::placeholder{color:var(--soft)}.ds-input:hover,.ds-input:focus{outline:none;border-color:var(--focus)}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Paper header: wordmark left, tap-to-call number top right.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><b>Anthony Nicotra</b><span>Fencing &amp; home contracting</span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>267-207-8015</a></header>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--ink:#13243a;--body:#2a3a4c;--soft:#4a5868;--navy:#1f4166;--deep:#13243a;--on-dark:#f4f7fb;--on-dark-soft:#c9d6e6;--pine:#e8b65a;--pine-2:#f0c878;--pine-ink:#7c5210;--focus:#1f4166;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-top{background:var(--paper);color:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 20px}.ds-brand{display:flex;flex-direction:column;text-decoration:none;color:inherit;line-height:1}.ds-brand b{font:400 21px/1 var(--display);white-space:nowrap}.ds-brand span{font:600 12px/1 var(--text);letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin-top:5px;white-space:nowrap}.ds-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;font:400 17px/1 var(--display);color:inherit;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}.ds-tel svg{color:var(--pine-ink)}.ds-tel:hover{color:var(--pine-ink)}.ds-tel:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}"
     },
     {
       "name": "Service Row",
       "kind": "custom",
-      "refersTo": "service-row",
-      "description": "Whole-row link to a pre-filled text for one job type, with an ink arrow disc.",
-      "html": "<div style=\"background:#f5ead6;padding:16px\"><a class=\"ds-row\" href=\"#\"><div class=\"ds-row-txt\"><h3>Fences</h3><p>Horizontal pressure-treated boards on all-new posts.</p></div><span class=\"ds-go\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 12h13M13 6.5l5.5 5.5-5.5 5.5\"/></svg></span></a></div>",
-      "css": ".ds-row{display:flex;align-items:center;gap:16px;padding:20px 4px;min-height:64px;text-decoration:none;color:#1c2a24;border-top:2px solid #ead9bb;border-bottom:2px solid #ead9bb;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;transition:background-color .2s}.ds-row-txt{flex:1}.ds-row h3{margin:0;font-size:clamp(1.35rem,6vw,1.7rem);line-height:1;font-weight:900;text-transform:uppercase;letter-spacing:-.02em}.ds-row p{margin:6px 0 0;font-size:16px;color:#4a5a50}.ds-go{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#1c2a24;color:#e6bf80;transition:transform .25s cubic-bezier(.2,.8,.2,1)}.ds-go svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.ds-row:hover{background:rgba(230,191,128,.18)}.ds-row:hover .ds-go{transform:translateX(4px)}.ds-row:focus-visible{outline:3px solid #f0d09a;outline-offset:3px}"
+      "refersTo": "arrow-circle",
+      "description": "Link row on navy where only the arrow circle fills pine on hover or focus.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\">Fences<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\">Gates &amp; posts<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li></ul>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--ink:#13243a;--body:#2a3a4c;--soft:#4a5868;--navy:#1f4166;--deep:#13243a;--on-dark:#f4f7fb;--on-dark-soft:#c9d6e6;--pine:#e8b65a;--pine-2:#f0c878;--pine-ink:#7c5210;--focus:#1f4166;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-rows{list-style:none;margin:0;padding:8px 24px;background:var(--navy)}.ds-rows li+li{border-top:1px solid rgba(255,255,255,.12)}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;padding:10px 0;text-decoration:none;color:var(--on-dark);font:400 22px/1.2 var(--display);outline:none}.ds-arrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.12);color:var(--on-dark);transition:background-color .2s,color .2s}.ds-row:hover .ds-arrow{background:var(--pine);color:var(--ink)}.ds-row:focus-visible .ds-arrow{background:var(--pine);color:var(--ink);outline:3px solid var(--pine);outline-offset:3px}"
     },
     {
-      "name": "Tag",
-      "kind": "chip",
-      "refersTo": "tag",
-      "description": "Static scope-hint pill inside a service row.",
-      "html": "<div class=\"ds-tags\"><span>Decks</span><span>Tile</span><span>Flooring</span><span>Windows &amp; doors</span></div>",
-      "css": ".ds-tags{display:flex;flex-wrap:wrap;gap:6px}.ds-tags span{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-size:14px;font-weight:700;padding:5px 10px;border-radius:999px;background:#ead9bb;color:#1c2a24}"
-    },
-    {
-      "name": "Step Plank",
-      "kind": "card",
-      "refersTo": "plank",
-      "description": "One estimate step as a pine plank with an ink number disc (texture is procedural at runtime; pine fill shown).",
-      "html": "<div style=\"background:#1d3a31;padding:20px\"><div class=\"ds-plank\"><span class=\"ds-n\">1</span><h3>Text a photo</h3><p>Snap the spot and send it with your town.</p></div></div>",
-      "css": ".ds-plank{position:relative;padding:20px 20px 20px 70px;border-radius:10px;background:var(--pine,#e6bf80) var(--tex-b,none) center/cover;color:#1c2a24;box-shadow:0 18px 30px -18px rgba(0,0,0,.55);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;transform:rotate(-.3deg);transition:transform .25s cubic-bezier(.2,.8,.2,1)}.ds-plank:hover{transform:rotate(.6deg) translateX(3px)}.ds-n{position:absolute;left:18px;top:18px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#1c2a24;color:#e6bf80;font-weight:900}.ds-plank h3{margin:0;font-size:1.3rem;line-height:1.05;font-weight:900;text-transform:uppercase;letter-spacing:-.02em}.ds-plank p{margin:6px 0 0;font-size:16px;line-height:1.45}"
-    },
-    {
-      "name": "Photo Frame",
-      "kind": "card",
-      "refersTo": "photo-frame",
-      "description": "Real job photo mounted in procedural pine, resting at a lean.",
-      "html": "<div style=\"background:#f5ead6;padding:28px\"><figure class=\"ds-frame\"><div class=\"ds-photo\"></div><figcaption>Horizontal pressure-treated fence</figcaption></figure></div>",
-      "css": ".ds-frame{margin:0 auto;width:min(100%,240px);padding:12px;border-radius:12px;background:var(--pine,#e6bf80) var(--tex-a,none) center/cover;box-shadow:0 26px 50px -22px rgba(21,44,37,.65),0 6px 14px -6px rgba(21,44,37,.35);transform:rotate(-1.6deg);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-frame:hover{transform:rotate(-.4deg) translateX(-3px)}.ds-photo{aspect-ratio:640/888;border-radius:5px;background:#cdb898}.ds-frame figcaption{margin-top:10px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;font-size:14px;font-weight:700;color:#1c2a24;text-align:center}"
-    },
-    {
-      "name": "Sticky Contact Bar",
-      "kind": "nav",
-      "refersTo": "sticky-bar",
-      "description": "Phone-only fixed bottom bar with Text (fills) and Call; slides up once hero buttons leave view.",
-      "html": "<nav class=\"ds-bar\"><a class=\"ds-b ds-b1\" href=\"#\">Text for a free estimate</a><a class=\"ds-b ds-b2\" href=\"#\">Call</a></nav>",
-      "css": ".ds-bar{display:flex;gap:10px;padding:10px 12px;background:rgba(21,44,37,.94);box-shadow:0 -10px 30px -12px rgba(0,0,0,.5);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-b{display:flex;align-items:center;justify-content:center;min-height:58px;border-radius:14px;border:2px solid #e6bf80;font-weight:800;font-size:17px;text-decoration:none;transition:transform .18s cubic-bezier(.2,.8,.2,1),background-color .18s}.ds-b1{flex:1;background:#e6bf80;color:#1c2a24;box-shadow:0 8px 18px -10px rgba(8,20,16,.7)}.ds-b1:hover{background:#f0d09a}.ds-b2{flex:none;padding:0 18px;color:#f4ecdc}.ds-b2:hover{background:rgba(230,191,128,.12)}.ds-b:active{transform:scale(.97)}.ds-b:focus-visible{outline:3px solid #f0d09a;outline-offset:3px}"
-    },
-    {
-      "name": "Grain Seam",
+      "name": "Numbered Steps",
       "kind": "custom",
-      "refersTo": "seam",
-      "description": "46px three-line grain transition from evergreen to cream (static frame; animated at runtime).",
-      "html": "<div class=\"ds-seam\"><svg viewBox=\"0 0 1200 46\" preserveAspectRatio=\"none\"><path class=\"f\" d=\"M0 23 C200 16 400 30 600 23 S1000 16 1200 23 L1200 46 L0 46 Z\"/><path class=\"l1\" d=\"M0 13 C200 6 400 20 600 13 S1000 6 1200 13\"/><path class=\"l3\" d=\"M0 33 C200 26 400 40 600 33 S1000 26 1200 33\"/><path class=\"l2\" d=\"M0 23 C200 16 400 30 600 23 S1000 16 1200 23\"/></svg></div>",
-      "css": ".ds-seam{height:46px;background:#152c25}.ds-seam svg{display:block;width:100%;height:100%}.ds-seam .f{fill:#f5ead6}.ds-seam .l1,.ds-seam .l2,.ds-seam .l3{fill:none;stroke-linecap:round;vector-effect:non-scaling-stroke}.ds-seam .l1{stroke:#b98a4e;stroke-width:2;opacity:.75}.ds-seam .l2{stroke:#e6bf80;stroke-width:3.5}.ds-seam .l3{stroke:#7a5530;stroke-width:1.6;opacity:.6}"
+      "refersTo": "step-number",
+      "description": "Pine number circles on textured deep navy.",
+      "html": "<ol class=\"ds-steps\"><li><div><b>Call or text me.</b><span>Tell me what you need, big or small.</span></div></li><li><div><b>Send a photo.</b><span>The old fence, the gate, or the bare yard.</span></div></li></ol>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--ink:#13243a;--body:#2a3a4c;--soft:#4a5868;--navy:#1f4166;--deep:#13243a;--on-dark:#f4f7fb;--on-dark-soft:#c9d6e6;--pine:#e8b65a;--pine-2:#f0c878;--pine-ink:#7c5210;--focus:#1f4166;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-steps{list-style:none;margin:0;padding:28px 24px;display:grid;gap:24px;counter-reset:s;background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);font:16px/1.7 var(--text)}.ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;counter-increment:s}.ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--pine);color:var(--ink);font:400 20px/1 var(--display)}.ds-steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}.ds-steps span{display:block;margin-top:4px}"
+    },
+    {
+      "name": "Work Photo Card",
+      "kind": "card",
+      "refersTo": "photo-card",
+      "description": "4:5 card with a deep-navy bottom scrim and Cal Sans caption (placeholder ground stands in for his photo).",
+      "html": "<figure class=\"ds-shot\"><div class=\"ds-img\"></div><figcaption>Horizontal pine fence</figcaption></figure>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--ink:#13243a;--body:#2a3a4c;--soft:#4a5868;--navy:#1f4166;--deep:#13243a;--on-dark:#f4f7fb;--on-dark-soft:#c9d6e6;--pine:#e8b65a;--pine-2:#f0c878;--pine-ink:#7c5210;--focus:#1f4166;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-shot{position:relative;margin:24px;border-radius:var(--r-card);overflow:hidden;background:var(--navy);aspect-ratio:4/5;max-width:280px;box-shadow:0 18px 40px -18px rgba(19,36,58,.45)}.ds-img{position:absolute;inset:0;background:repeating-linear-gradient(0deg,#c99a55 0 18px,#a87a3e 18px 20px)}.ds-shot::after{content:\"\";position:absolute;inset:auto 0 0 0;height:42%;background:linear-gradient(to top,rgba(13,25,41,.82),rgba(13,25,41,0))}.ds-shot figcaption{position:absolute;z-index:1;left:22px;right:22px;bottom:20px;font:400 22px/1.15 var(--display);color:#fff}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "custom",
+      "refersTo": "float-text",
+      "description": "House-choice 60px pine circle that opens a text; shown after the hero, hidden over the form.",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-float\" href=\"#\" aria-label=\"Text Anthony\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#ffffff;--ink:#13243a;--body:#2a3a4c;--soft:#4a5868;--navy:#1f4166;--deep:#13243a;--on-dark:#f4f7fb;--on-dark-soft:#c9d6e6;--pine:#e8b65a;--pine-2:#f0c878;--pine-ink:#7c5210;--focus:#1f4166;--error:#b3261e;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;--r-card:24px;--r-field:10px;--pill:999px}.ds-stage{padding:24px;background:var(--paper)}.ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--pine);color:var(--ink);box-shadow:0 10px 28px rgba(8,24,46,.3)}.ds-float:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
     }
   ],
   "narrative": {
-    "northStar": "The New Fence in the Backyard",
-    "overview": "**Creative North Star: \"The New Fence in the Backyard\"**\n\nThe page is built out of the thing the owner is proudest of: a freshly built horizontal fence of pressure-treated pine, standing on new posts against a deep evergreen yard, with sunlit sawdust hanging in the air. Every surface is either the yard (evergreen ground), sawn lumber (cream sections, pine planks and frames), or the hardware between them (ink discs, grain-line seams). Nothing on the page is a generic web surface; the job photo is mounted in a pine frame, the steps are planks, and the hero and closer each end in a living fence the visitor can push.\n\nDensity is low and the reading order is short: one heavy headline, one line of pitch, two thumb-sized buttons. The system is phone-first and contractor-to-neighbor in tone: chunky uppercase type, big tap targets, warm wood against cool green. Motion is physical, not decorative: boards bow, spring and settle; planks lean away from a finger; seams ripple like grain. All of it stops dead under reduced motion and leaves a complete static page.\n\nThe confirmed rejection is a black ground. The darkest thing on the page is evergreen.",
+    "northStar": "The Squared-Up Yard",
+    "overview": "**Creative North Star: \"The Squared-Up Yard\"**\n\nThis is Ellie's house calm band style applied to a hands-on fence builder: a page that earns trust through calm order rather than spectacle. Full-width bands alternate between off-white paper, navy, and deep navy, so the page reads like a fence line of even, level boards. One warm colour runs through it, the gold of fresh pressure-treated pine taken from Anthony's own fence photo (he has no logo or brand colours). Display type is Cal Sans, round and friendly; body copy is the system stack, set loose at 16/1.7 for phones inside Facebook's in-app browser.\n\nDensity is low and the rhythm is generous: one idea per band, a single column on phones, two columns only where the content pairs naturally (photo and quote, heading and form, name and big phone number). The one real job photo sits as a 4:5 card in the light band; it is never a full-bleed hero, never stock, never filtered beyond a bottom scrim for its caption. Motion is limited and named: the hero H1 bounces in letter by letter, below-the-fold blocks fade up 12px once, and a floating text circle appears after the hero. All three are absent under reduced motion, and the bounce and fade-up are absent without JS.\n\nThe previous living-pine-fence world (evergreen ground, system 900 display, fence canvas) has been discarded entirely; nothing of it carries forward.",
     "keyCharacteristics": [
-      "Two grounds only: evergreen (`ground`) and sawn cream (`cream`), joined by animated three-line grain seams.",
-      "Pine (`pine`) is both the material and the primary action color; ink text always sits on it.",
-      "One system font stack, made characterful by weight 900, uppercase and tight tracking.",
-      "Procedural pine textures (generated at runtime) skin the fence, the photo frame and the step planks.",
-      "One shared spring (stiffness 38, damping 6.5) drives every physical motion.",
-      "Phone base layout, one structural breakpoint at 760px, a sticky Text/Call bar on phones."
+      "Paper, navy, and deep-navy bands; deep navy carries a faint 135deg line texture.",
+      "One warm accent (pine gold), used as a fill on light and as fill or text on dark.",
+      "Cal Sans display at weight 400 for every heading, button, and row label; system body at 16/1.7.",
+      "Soft geometry: 24px cards, 10px fields, pill buttons, chips, and circles.",
+      "The phone number is always one tap away: header top right, close band, floating circle.",
+      "House calm-style features kept by Ellie's choice: eyebrow pills, H1 bounce-in, floating text circle, band texture."
     ],
     "rules": [
       {
-        "name": "The Evergreen Ground Rule",
-        "body": "No black ground, anywhere. Dark surfaces are `ground` or `ground-deep`; even the shadow behind the canvas fence boards is a deep green, not black.",
+        "name": "The Pine Is Wood, Not Ink Rule",
+        "body": "Pine (#e8b65a) is 1.7:1 on paper, so it never sets text on light surfaces. On light it is a fill with Ink text on top (8.4:1); when gold has to be read on light, use Stained Pine (6.3:1).",
         "section": "colors"
       },
       {
-        "name": "The Two Grounds Rule",
-        "body": "A section is either evergreen with `on-ground` text or cream with `ink` text. Never introduce a third surface color; transitions between the two happen only through a seam.",
+        "name": "The Dark-Band Accent Rule",
+        "body": "The accent phrase at the end of a heading (\"NJ & Philly.\", \"build.\", \"works.\") appears on navy and deep-navy bands only. Headings on paper are entirely Ink.",
         "section": "colors"
       },
       {
-        "name": "The Ink-On-Pine Rule",
-        "body": "Anything filled with pine carries `ink` text, and anything filled with `ink` carries a pine glyph. Light text never sits on pine.",
+        "name": "The One Warm Colour Rule",
+        "body": "Every other colour is a cool navy or neutral. A second warm hue, a gradient accent, or a tint of pine as a band ground breaks the system. (The Facebook glyph uses Facebook's own blue as a third-party mark, not a palette colour.)",
         "section": "colors"
       },
       {
-        "name": "The One Family Rule",
-        "body": "One font stack for everything. Hierarchy is built with weight (900 / 800 / 700 / 600 / 400), case and size; never add a second family.",
+        "name": "The Single Weight Rule",
+        "body": "Cal Sans is only ever weight 400; hierarchy comes from size, not weight. Bold appears only in body text (the promise's name, at 600).",
         "section": "typography"
       },
       {
-        "name": "The Uppercase Is For Headings Rule",
-        "body": "Uppercase is reserved for weight-900 headings and the wordmark. Body, buttons, tags and captions stay in sentence case.",
+        "name": "The Numbers Stay Whole Rule",
+        "body": "Every phone number is `white-space: nowrap` with tabular numerals, so 267-207-8015 never breaks across lines.",
         "section": "typography"
       },
       {
-        "name": "The Thumb First Rule",
-        "body": "The primary action is visible without scrolling on a phone, and once the hero buttons scroll away a fixed bottom bar (Text, Call) slides up; it hides again when the closer's buttons are on screen. Every tap target is at least 44px; buttons are 58px tall.",
+        "name": "The Alternating Boards Rule",
+        "body": "Bands alternate light and dark; the faint line texture lives only on the hero and deep-navy bands, at `repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.035) 22px 23px)`. It is a house feature, kept quiet enough to read as grain, not pattern.",
         "section": "layout"
       },
       {
-        "name": "The Same Fence Twice Rule",
-        "body": "The page opens and closes on the living fence. Copy sits above the fence, never on top of the boards.",
-        "section": "layout"
-      },
-      {
-        "name": "The Lifted Not Offset Rule",
-        "body": "Shadows have zero x-offset and negative spread. No hard-edged or diagonally offset shadows, no borders standing in for elevation.",
+        "name": "The Tone Before Shadow Rule",
+        "body": "New surfaces separate by ground colour first (white card on paper, paper field in white card). A shadow is added only to something that sits on top of content, like the photo or the floating circle; never a hard offset shadow.",
         "section": "elevation"
-      },
-      {
-        "name": "The Seam Rule",
-        "body": "Section boundaries are grain, never a straight edge or a divider line.",
-        "section": "shapes"
-      },
-      {
-        "name": "The One Spring Rule",
-        "body": "Every physical response (fence boards, plank and frame lean) uses the same spring: stiffness 38, damping 6.5. New interactive elements inherit it so everything feels like the same wood.",
-        "section": "components"
-      },
-      {
-        "name": "The Still Page Rule",
-        "body": "Motion is an enhancement over a complete static composition; nothing is revealed, hidden or sequenced by animation except the sticky bar.",
-        "section": "components"
       }
     ],
     "dos": [
-      "**Do** keep every dark surface evergreen (`ground`, `ground-deep`); the darkest canvas value is a deep green.",
-      "**Do** put `ink` text on pine and pine glyphs on `ink` discs.",
-      "**Do** make the pre-filled `sms:` text the primary (pine) button and `tel:` the secondary (outlined) button, in that order.",
-      "**Do** join evergreen and cream sections only with the three-line grain seam (46px).",
-      "**Do** build headings at weight 900, uppercase, -0.02em, line-height 0.95 in the system stack.",
-      "**Do** keep tap targets at least 44px and primary buttons 58px tall.",
-      "**Do** design the phone layout first; restructure only at 760px.",
-      "**Do** drive any new physical motion with the shared spring (38 / 6.5) and the shared loop, gated by viewport visibility and fully disabled under reduced motion.",
-      "**Do** frame real photography in procedural pine rather than placing it bare."
+      "**Do** alternate paper, navy, and textured deep-navy bands, and keep the 135deg line texture at 3.5% white.",
+      "**Do** keep pine as a fill on light with Ink text on it, and switch to Stained Pine (#7c5210) whenever gold must be read on light.",
+      "**Do** put the accent phrase only at the end of a heading on a dark band.",
+      "**Do** set every heading, button, row label, and phone number in Cal Sans 400, and body and inputs in the system stack at 16px.",
+      "**Do** keep the phone number reachable in the header top right, the close band, and the floating circle, unbroken and tabular.",
+      "**Do** keep tap targets at 44px or more (buttons 56px, chips 48px, fields 52px).",
+      "**Do** scope hover to `(hover: hover)` and keep focus rings visible: 3px Focus Navy on light, pine on dark.",
+      "**Do** make the arrow circle the only thing that changes on a link row's hover or focus.",
+      "**Do** use only his own photos, at card size with their provenance recorded beside the file.",
+      "**Do** gate every motion behind JS and reduced-motion, and wait for Cal Sans before splitting the H1."
     ],
     "donts": [
-      "**Don't** use black or near-black neutral grounds.",
-      "**Don't** add a second typeface or a webfont; the system stack is the house display face.",
-      "**Don't** introduce a third surface color or a straight-edged section divider.",
-      "**Don't** put light text on pine or pine text on cream.",
-      "**Don't** use hard-edged or horizontally offset shadows.",
-      "**Don't** place copy over the fence boards.",
-      "**Don't** set body, button or tag text in uppercase."
+      "**Don't** set pine (#e8b65a) as text or a thin line on paper or white; it is 1.7:1.",
+      "**Don't** add a second warm hue or use pine as a band ground.",
+      "**Don't** put an eyebrow above every heading, give it hover, an arrow, a shadow, or a full pine fill, or mark it up as a heading.",
+      "**Don't** use hard offset shadows or shadow the form card; separate by tone first.",
+      "**Don't** turn the floating circle into a sticky bottom bar or show it over the form.",
+      "**Don't** use stock work photos or run the work photo full-bleed as the hero.",
+      "**Don't** bold Cal Sans or bring back a system 900 display face.",
+      "**Don't** add new motion beyond the H1 bounce-in, the single 12px fade-up, and the float slide."
     ]
   }
 }

@@ -74,6 +74,42 @@
         ],
         "createdAt": "2026-10-20T00:43:29.369Z",
         "reason": "Ellie's house calm band style (calm-photo-style.md item 2, 2026-10-19) mandates this faint 135deg band texture"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "20px",
+        "createdAt": "2026-10-20T00:57:38.501Z",
+        "reason": "Claude: shipped one-off from the calm-style kit (DPG reference), deliberately not canonized by the DESIGN.md documenter (Facebook row)"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-20T00:57:38.563Z",
+        "reason": "Claude: shipped one-off from the calm-style kit (DPG reference), deliberately not canonized by the DESIGN.md documenter (focus-ring corner)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "11px",
+        "createdAt": "2026-10-20T00:57:38.622Z",
+        "reason": "Claude: shipped one-off from the calm-style kit (DPG reference), deliberately not canonized by the DESIGN.md documenter (brand subline at <=399px so the header fits 360px)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-20T00:57:38.684Z",
+        "reason": "Claude: shipped one-off from the calm-style kit (DPG reference), deliberately not canonized by the DESIGN.md documenter (desktop step titles)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgba(13,25,41,.82)",
+        "createdAt": "2026-10-20T00:57:38.745Z",
+        "reason": "Claude: shipped one-off from the calm-style kit (DPG reference), deliberately not canonized by the DESIGN.md documenter (photo-card bottom gradient for caption contrast, sampled 7.5:1)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#1877f2",
+        "createdAt": "2026-10-20T00:57:38.804Z",
+        "reason": "Facebook's own brand blue on its logo mark, a third-party mark not a palette colour"
       }
     ]
   }
