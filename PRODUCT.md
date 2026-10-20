@@ -1,7 +1,7 @@
 # Product: Anthony Nicotra — fencing & home contracting pitch site
 
 - **Platform:** web
-- **Stack:** static single-file HTML/CSS/JS (`index.html`), no frameworks, no tracking, system fonts
+- **Stack:** static single-file HTML/CSS/JS (`index.html`), no frameworks, no tracking; Cal Sans (Google Fonts) for headings, system stack for body
 - **Mode:** Persuade (one-pager pitch)
 
 ## Users
@@ -18,11 +18,11 @@ A hands-on contractor whose showcase job is a horizontal pressure-treated fence 
 - Contact: phone 267-207-8015, accepts calls and texts (his post). No email, no booking link.
 - Primary action: `sms:` with a pre-filled estimate request; secondary: `tel:`.
 - Business name: unknown. Use his own name as the wordmark; do not invent one.
-- Service area: unknown. His hashtags reference NJ (incl. #collingswoodnj) and Philadelphia markets; do not claim an area.
+- Service area: unknown. His own hashtags name New Jersey (#newjerseyhandyman, #njcontractor, #collingswoodnj) and Philadelphia (#phillyhandyman, #philadelphiacontractor). The page says "NJ & Philly" on that basis (**inferred**); it names no towns.
 - Hours, prices, reviews, years in business, license: unknown — say nothing.
 
 ## Brand commitments
-- No logo, no colors published. Wordmark only. Colors inferred from the work itself (fresh pressure-treated pine) — **inferred**.
+- No logo, no colors published. Wordmark only, with an "AN" monogram for the favicon. House calm band style (paper and navy bands); the one warm accent is the pressure-treated-pine gold of his fence — **inferred**.
 - Tone: casual, direct, contractor-to-neighbor ("customer loved the outcome!!").
 
 ## Evidence on hand
