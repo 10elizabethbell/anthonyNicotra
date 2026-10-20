@@ -65,6 +65,15 @@
         "value": "#cdb898",
         "createdAt": "2026-10-08T21:50:41.917Z",
         "reason": "Claude: shipped one-off in the built page, deliberately not canonized by the DESIGN.md documenter (focus ring, fallbacks, minor text steps); Ellie tunes next (pre-JS fallback color)"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T00:43:29.369Z",
+        "reason": "Ellie's house calm band style (calm-photo-style.md item 2, 2026-10-19) mandates this faint 135deg band texture"
       }
     ]
   }
