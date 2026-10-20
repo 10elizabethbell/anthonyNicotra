@@ -4,6 +4,7 @@ description: A calm, phone-first one-pager in paper and navy bands with one pres
 colors:
   paper: "#f4f6fb"
   card: "#ffffff"
+  field: "#e6ecf5"
   ink: "#13243a"
   body: "#2a3a4c"
   soft: "#4a5868"
@@ -91,7 +92,7 @@ components:
     rounded: "{rounded.pill}"
     padding: "9px 14px"
   chip:
-    backgroundColor: "{colors.paper}"
+    backgroundColor: "{colors.field}"
     textColor: "{colors.ink}"
     typography: "{typography.body}"
     rounded: "{rounded.pill}"
@@ -101,7 +102,7 @@ components:
     backgroundColor: "{colors.ink}"
     textColor: "{colors.card}"
   input:
-    backgroundColor: "{colors.paper}"
+    backgroundColor: "{colors.field}"
     textColor: "{colors.ink}"
     typography: "{typography.body}"
     rounded: "{rounded.field}"
