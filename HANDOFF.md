@@ -1,57 +1,117 @@
 # Anthony Nicotra — handoff at ~60%
 
-**Live file:** index.html · **Repo:** https://github.com/10elizabethbell/anthonyNicotra · **Built:** 2026-10-08 from Muse brief (run 2026-10-08, thin brief)
+**Live:** https://10elizabethbell.github.io/anthonyNicotra/ · **Repo:** https://github.com/10elizabethbell/anthonyNicotra · **Built:** 2026-10-08 from Muse brief (2026-10-08, thin brief) · **Revamped:** 2026-10-19 to the calm band style · **Call Sheet:** URL set (script reported UNCHANGED: it was already there)
+
+## Revamp, 2026-10-19: what changed
+He hasn't been contacted yet, so the whole site was rebuilt in the new house style (`calm-photo-style.md`), starting from DPG's `index.html`. The old living-fence world is in git history (`47ee476`, `c4a4f70`) if you ever want it back as an opt-in signature.
+- **Look:** the green "evergreen backyard" ground with the canvas fence is gone. Now:
+  - paper and navy bands, with a deep-navy band that has the faint line texture
+  - pressure-treated-pine gold `#e8b65a` as the one accent, taken from his fence; it's a fill only, with `#7c5210` when it has to be text on light
+  - Cal Sans headings over the system-stack body
+  - pill buttons and 24px cards
+- **Hero:** a plain textured navy band. His only photo is a tall, busy phone shot (wires, AC unit, covered furniture), so it's used as the work card, not the hero.
+  - Contents: eyebrow "Free estimates", the H1 **"Solid new fences in NJ & Philly."**, the promise, and two buttons ("Get a free estimate" goes to the form; "Text Anthony" opens a pre-filled `sms:`).
+  - No Call button: the number sits only in the top-right corner.
+- **Motion** (the audience is homeowners, not flagged 40+, so the full calm motion applies):
+  - **H1 bounce-in, letter by letter.** It waits up to 700ms (`CONFIG.H1_FONT_WAIT`) for Cal Sans, so the split heading wraps exactly like the plain one; I verified 360/390/430/1440 in Chromium and WebKit.
+  - **One 12px fade-up** for anything below the first screen.
+  - **The 60px floating text circle.** It's hidden on the hero and over the form.
+  - Under reduced motion or without JS, everything shows at once.
+- **Structure:**
+  - hero
+  - "Built new, from the posts up." with his own post quoted word for word, the 4:5 job photo, and the "Click to see more of my work" Facebook row right under it
+  - "What I build" service rows (each pre-selects the job in the form; only the arrow changes on hover)
+  - How it works (3 steps)
+  - the quote form
+  - the close with the big phone number
+  - the footer with Facebook
+- **Removed from the old build:**
+  - the "Demo one-pager — free sample." footer
+  - the sticky Text + Call bottom bar
+  - the Call buttons under the hero
+  - the "Text your town" button
+  - the canvas fence and the animated seams
+- **New:**
+  - favicon and iPhone icon: an "AN" monogram (there's no logo)
+  - an `og.jpg` link preview (1200x630)
+  - the photo at 1080 and 640 sizes with srcset
+  - a Facebook link (none before)
+  - the quote form with a fallback: if Messages doesn't open, it shows an "Open in Messages" link and the composed text to copy
+- Weight: `index.html` is about 33KB, the phone photo 68KB (156KB on desktop), plus Cal Sans from Google Fonts, loaded without blocking.
 
 ## What's built
-- One page, phone first: hero → his job (photo + his own post quote) → what he builds → how a free estimate works → where he works → name + buttons again → footer ("Demo one-pager — free sample.").
-- **World: fresh pressure-treated pine on an evergreen backyard ground.** No logo or colors exist, so the palette comes from his own fence: pine (`--pine`) on deep green (`--ground`), cream "sawn pine" sections.
-- **Signature element: the living fence** (`Fence` IIFE, constants in `CFG`). Horizontal boards with procedural grain and knots bow between their posts on three layered waves. A finger or mouse pushes boards away and they spring back with a wobble. A fast swipe across the boards knocks sawdust loose. Sunlit dust motes float above and get pushed around. A sun sheen glides across. It runs in the hero and again in the closer.
-- Carried through the page: the seams between sections are three moving grain lines (the fill follows the middle one). The photo frame and the three step planks use the same procedural pine and lean away from the finger.
-- His photo is framed in pine and leans on the hero fence. On phone it peeks up under the fence in the first screen; on desktop it's the right column.
-- **Contact:** every "Text" button and service row is an `sms:+12672078015?&body=…` link with a pre-filled estimate request naming the job ("Job: New fence / Town: / I'll send a photo"). Call buttons use `tel:`. On phones a sticky Text + Call bar appears once the hero buttons scroll away and hides at the closer. On desktop the text button shows the number.
-- Weight: about 140KB in one file (photo is about 100KB of that, loaded after the scripts).
+- **Contact:** phone 267-207-8015 (from his post).
+  - Top-right `tel:`.
+  - Hero "Text Anthony" and the floating circle use `sms:+12672078015?&body=Hi Anthony, I found your website. I'd like a free estimate for: `.
+  - The form composes e.g. "Hi Anthony, this is Sam. I'd like a free estimate for: Fence. Town: …. I'll send a photo of the spot."
+  - No email anywhere (none exists).
+- **Form fields:**
+  - job chips: Fence, Gate, Deck, Something else
+  - name (required)
+  - town (required)
+  - optional notes
+  - Errors are written as plain sentences.
+- **Service rows:**
+  - Fences, Gates & posts, Decks
+  - Kitchens & baths, Tile & flooring, Masonry, Windows & doors
+  - Something else
+- **Facebook:** https://www.facebook.com/profile.php?id=100000287224382 (his personal profile, from the brief's profile id), under the photo and in the footer.
 
 ## Assumptions I made
-- **Name on the page = "Anthony Nicotra" + "Fencing & home contracting".** The brief says don't invent a business name. His personal name is what he posts under. Confirm at outreach.
-- **Headline "Built new, from the posts up."** Built from his post ("All new posts and new gate installed"). Benefit framing, not a quote.
-- **Services:** Fences and Gates & posts are verbatim from his post. The "Any job big or small" tags (decks, tile, flooring, kitchens, baths, masonry, windows & doors) come from his own hashtags only, and are labelled "Tagged in his posts". I left out **#electrician and #plumbing**: those are licensed trades in NJ/PA and claiming them unconfirmed is risky.
-- **Area:** the page says he posts in New Jersey contractor groups and tags Philadelphia-area work (both facts from the brief). It names no towns. In place of a list there's a "Text your town" button with the message pre-filled ("Do you cover my town?").
-- **How it works:** the steps are inferred from "call or text for free estimate" plus Muse's photo-quote idea. "Gets back to you" is a reasonable inference, not his words.
-- Voice: third person ("Anthony…"), casual. His posts say "us"; switch to first person if he prefers.
+- **"NJ & Philly" in the H1** (the calm style requires a place in the H1). The brief says to keep the area unknown. I read that as no towns or radius, and the page names none.
+  - Evidence for NJ: his own hashtags #newjerseyhandyman, #njcontractor and #collingswoodnj, plus his posts in NJ contractor groups.
+  - Evidence for Philly: #phillyhandyman, #philadelphiacontractor, and his 267 number.
+  - The close hedges it: "Not sure I cover your town? Call or text and ask."
+  - The finish reviewer judged it acceptable. **Confirm with him first.**
+- **Services beyond fences and gates come only from his hashtags:**
+  - decks
+  - kitchens and baths
+  - tile and flooring
+  - masonry
+  - windows and doors
+
+  They're no longer labelled "tagged in his posts", as they were on the old build. #electrician and #plumbing are still left out (licensed trades).
+- **First person ("I")** per the finishing rules. His posts say "give **us** a call", so he may have a crew; switch to "we" if so.
+- **Name:** "Anthony Nicotra / Fencing & home contracting". There's no business name; the brief says don't invent one.
+- **Promise line:** "New posts, new boards, and a yard you'll be glad to look at." is my wording, built from his post.
+- **How it works:** step 2 "Send a photo" is Muse's photo-quote idea. Step 3 says "Based on your photo and what you tell me", which is inferred.
+- **Accent colour:** inferred from the pine in his photo, since there's no brand.
 
 ## Placeholders and gaps
-- Service area / town list (the page asks visitors to text their town instead).
-- Business name, logo, hours, email, reviews, prices, years in business: none on the page.
-- Only **one** photo exists (the same image cross-posted to all three groups). I cropped off its red text banner. No plates, faces or house numbers were visible. No gate photo, no before/after.
+- No business name, logo, email, hours, reviews, prices, years in business or licence on the page.
+- Only one photo (the same image cross-posted to three groups), cropped to remove its red text banner. No gate photo and no before/after.
+- The Facebook profile was 403-restricted to Muse, so visitors may see little there. Check what a logged-out visitor sees; if it's empty, link one of his group posts instead.
 
 ## Questions for the owner
-1. What do you call the business? Logo or truck lettering?
-2. Which towns do you cover (Collingswood? Philly neighborhoods)?
-3. More job photos, especially gates, decks, and before/after pairs?
-4. Which services do you actually want leads for? Do you do electrical/plumbing yourself (licensed)?
-5. Licensed & insured (NJ HIC number)? That's worth showing if true.
-6. Hours / best time to text? Any customer reviews we can quote?
-
-## Review round (Impeccable finish reviewer, applied)
-- Area copy corrected (the groups are NJ; Philly comes from hashtags). The "coming soon" marker became a real text button.
-- Fence calmed: bow 1.4/1.8px, nearly one phase across boards, 4–5px bend columns (smoother edges), max push 14px. If it now feels too tame, raise `CFG.waveAmp` and the `b * .12` phase term.
-- Step planks use knot-free pine, so knots no longer sit under text.
-- Seams no longer leave straight color edges. The card lean pauses off screen and has a 60px reach on phones.
-- Not done: on desktop ≥1100px the photo frame doesn't rise further into the hero's empty right half. The grid's `align-items:end` cancels the negative margin. Fix by positioning the frame inside the hero on desktop.
-- Reviewer's ceiling notes for you: the fence still reads a little "ribbon" rather than milled lumber, and there's **no gate** in the fence even though the gate is half his showcase job. Adding a gate section to the canvas is a good next touch.
+1. Do you work in both NJ and Philly? Which towns?
+2. What do you call the business? Logo or truck lettering?
+3. Just you, or a crew ("I" vs "we")?
+4. Which services do you want leads for? Are decks, kitchens, tile, masonry and windows really yours?
+5. More job photos, especially gates, decks and before/afters?
+6. Licensed and insured (NJ HIC number)? Hours? Any customer reviews?
 
 ## Ideas not built (yours to pick)
-- **Runner-up world:** backyard at golden hour, with long fence-picket shadows sliding across swaying grass, the grass parting under the finger.
-- Other worlds considered: sawdust and shavings curling in workshop light; chalk-line snap / blueprint; a lumber-yard stack; a masonry grid that ripples.
-- Before/after slider once he sends pairs (taste section 4).
-- `book.html` short estimate form → composed text (name, town, job, photo reminder).
-- Seams reacting to the pointer like the fence does.
-- Photo gallery as a row of "boards" you swipe sideways.
-- First-person copy variant ("Give us a call or text…"), which is his own phrasing.
-- Self-hosted display face: Impeccable's craft floor bans system faces as display voice. I kept the system stack per Ellie's house style. Worth a look if you want more character.
+- **Runner-up signature (opt-in):** the living pine fence from the old build (`47ee476`), as an opt-in hero: boards that bow and spring back under a finger. The reviewer suggested adding a gate to it.
+- **Other worlds considered:**
+  - golden-hour picket shadows over swaying grass
+  - sawdust curling in workshop light
+  - a chalk-line snap
+  - a lumber stack
+- **Desktop hero's right half is empty texture** (as on DPG). Option: from 1024px up, move the fence card into the hero's right column (phone layout unchanged).
+- **The kit's accent arrow on the photo card isn't there,** because the card isn't a link. Making it link to Facebook would duplicate the Facebook row under it.
+- A pine check mark on "Text this to Anthony" before Messages opens.
+- A wood-grain fill on the step numbers (only if it reads as real wood).
+- A before/after slider once he sends pairs.
+- **Impeccable findings I kept because they're your calm-style choices:**
+  - the eyebrow pills (the craft floor bans eyebrows outright)
+  - the H1 bounce-in (`quieter` says no bounce easing)
+  - the floating circle (distill wants one action)
+  - the faint band texture (the detector's `repeating-stripes-gradient`, ignored for `index.html` in `.impeccable/config.json`; the reviewer notes it runs behind the H1 at 3.5% white)
+  - the fade-up on every section (the craft floor dislikes one identical entrance)
+- **Detector finding left standing:** `flat-type-hierarchy`. It counts the small 11–20px text steps; the display-to-body jump is clear.
+- **Floating circle placement:** at 390px it can sit over the last visible service-row arrow. A tap there texts him instead of jumping to the form; both reach him.
 
 ## Not verified
-- Real-device touch (tested with simulated touch and mouse sweeps in headless Chrome only).
-- Real SMS handoff on iOS and Android, especially from inside Facebook's in-app browser (`?&body=` form used).
-- Frame rate on old phones (phone: 4px bend columns × ~8 boards, 34 motes, dpr capped at 2).
-- Headless full-page captures garble the photo at very tall heights. It renders fine at real phone heights; recheck on a device.
+- Real-device touch, and the real SMS handoff on iOS and Android, especially inside Facebook's in-app browser (uses the `?&body=` form).
+- What his Facebook profile shows to a logged-out visitor.
+- The H1 on a slow cellular load: if Cal Sans takes more than 700ms, the bounce runs in the fallback face and may re-wrap when it settles.
