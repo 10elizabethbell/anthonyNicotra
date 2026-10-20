@@ -26,6 +26,7 @@
   /* off-white paper, two navies, one pressure-treated-pine gold (from his fence; no logo exists) */
   --paper:#f4f6fb;       /* page ground */
   --card:#ffffff;
+  --field:#e6ecf5;       /* inputs and chips on the white form card (paper there is ~1.08:1) */
   --ink:#13243a;         /* headings, text on pine */
   --body:#2a3a4c;        /* running text on light */
   --soft:#4a5868;        /* secondary text on light */
@@ -145,13 +146,13 @@ form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,3
 .field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
 .field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
-input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--paper);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}
 textarea{min-height:110px;resize:vertical}
 input::placeholder,textarea::placeholder{color:var(--soft)}
 input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
-.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--paper);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
 .chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}
 .chips input:checked+label{background:var(--ink);color:#fff}
 .err{display:none;font-size:15px;color:var(--error)}
