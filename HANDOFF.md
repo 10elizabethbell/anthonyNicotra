@@ -9,7 +9,11 @@ He hasn't been contacted yet, so the whole site was rebuilt in the new house sty
   - pressure-treated-pine gold `#e8b65a` as the one accent, taken from his fence; it's a fill only, with `#7c5210` when it has to be text on light
   - Cal Sans headings over the system-stack body
   - pill buttons and 24px cards
-- **Hero:** a plain textured navy band. His only photo is a tall, busy phone shot (wires, AC unit, covered furniture), so it's used as the work card, not the hero.
+- **Hero:** a plain textured navy band. Under the 2026-10-19 hero-photo rule I tried his fence photo behind the hero (a navy overlay at .8/.7, white text sampled at 6.8:1 on phones and 8.5:1 on desktop), then reverted it after Ellie's "only if it renders nicely in the hero's shape" condition:
+  - **Phone, 390px: it looked good.** A portrait shot suits a tall phone hero.
+  - **Desktop, 1440px: it failed.** The only source is a 1080×1350 portrait phone shot (the rest of the frame is wires, an AC unit and covered furniture). Filling the wide band meant blowing it up about 1.33×; making the boards fill it took about 1.9×, which is soft. That's the "tall photo blown up to fill a wide band" case.
+
+  So the photo stays as the 4:5 work card further down. The tried version is in this session's notes, not in git.
   - Contents: eyebrow "Free estimates", the H1 **"Solid new fences in NJ & Philly."**, the promise, and two buttons ("Get a free estimate" goes to the form; "Text Anthony" opens a pre-filled `sms:`).
   - No Call button: the number sits only in the top-right corner.
 - **Motion** (the audience is homeowners, not flagged 40+, so the full calm motion applies):
@@ -97,7 +101,10 @@ He hasn't been contacted yet, so the whole site was rebuilt in the new house sty
   - sawdust curling in workshop light
   - a chalk-line snap
   - a lumber stack
-- **Desktop hero's right half is empty texture** (as on DPG). Option: from 1024px up, move the fence card into the hero's right column (phone layout unchanged).
+- **Desktop hero's right half is empty texture** (as on DPG). Options:
+  - from 1024px up, move the fence card into the hero's right column (phone layout unchanged)
+  - if he sends a wide (landscape) job photo, put it behind the hero under navy
+  - a phone-only photo hero (the fence boards under a .8 navy veil looked good at 390px) is possible, but it splits the hero by device, so it's your call
 - **The kit's accent arrow on the photo card isn't there,** because the card isn't a link. Making it link to Facebook would duplicate the Facebook row under it.
 - A pine check mark on "Text this to Anthony" before Messages opens.
 - A wood-grain fill on the step numbers (only if it reads as real wood).
