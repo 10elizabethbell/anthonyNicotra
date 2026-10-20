@@ -18,7 +18,8 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap"></noscript>
 <style>
 /* ---------- Tokens ---------- */
 :root{
@@ -87,11 +88,11 @@ section{padding:64px 0}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
 .brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
 .brand b{font:400 21px/1 var(--display);letter-spacing:.01em;white-space:nowrap}
-.brand span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.brand span{font:600 12px/1 var(--text);letter-spacing:.06em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
 .tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
 .tel svg{width:18px;height:18px;flex:none;color:var(--pine-ink)}
-@media (max-width:399px){.brand b{font-size:19px}.brand span{letter-spacing:.03em}.tel{font-size:16px;gap:6px}.tel svg{width:15px;height:15px}}
-@media (max-width:359px){.tel svg{display:none}}
+@media (max-width:399px){.brand b{font-size:19px}.brand span{font-size:11px;letter-spacing:.03em}.tel{font-size:16px;gap:6px}.tel svg{width:15px;height:15px}}
+@media (max-width:379px){.tel svg{display:none}}
 
 /* ---------- Hero ---------- */
 .hero{padding:0;position:relative;background-color:var(--navy);background-image:var(--texture);color:var(--on-dark);overflow:hidden}
@@ -101,6 +102,7 @@ section{padding:64px 0}
 .hero h1 .w{display:inline-block;white-space:nowrap}
 .hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
 @keyframes letter-in{to{opacity:1;transform:none}}
+.hero h1.wait{opacity:0}
 .promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark-soft);max-width:32ch}
 .promise b{color:var(--on-dark);font-weight:600}
 .actions{display:grid;gap:12px;width:100%;margin-top:4px}
@@ -111,11 +113,11 @@ section{padding:64px 0}
 .shot img{width:100%;height:100%;object-fit:cover}
 .shot::after{content:"";position:absolute;inset:auto 0 0 0;height:42%;background:linear-gradient(to top,rgba(13,25,41,.82),rgba(13,25,41,0))}
 .shot figcaption{position:absolute;z-index:1;left:22px;right:22px;bottom:20px;font:400 clamp(21px,5.6vw,26px)/1.15 var(--display);color:#fff}
-.said{margin:24px 0 0;padding:0;font:400 clamp(21px,5.6vw,26px)/1.3 var(--display);color:var(--ink);max-width:24ch}
+.said{margin:20px 0 0;padding:0;font:400 clamp(19px,5vw,22px)/1.35 var(--display);color:var(--body);max-width:26ch}
 .said footer{all:unset;display:block;margin-top:12px;font:15px/1.4 var(--text);color:var(--soft)}
-.fb{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(19px,5.2vw,22px)/1.2 var(--display);max-width:460px;box-shadow:0 10px 28px -16px rgba(19,36,58,.35)}
+.fb{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(19px,5.2vw,22px)/1.2 var(--display);width:100%;max-width:520px;box-shadow:0 10px 28px -16px rgba(19,36,58,.35)}
 .fb:hover,.fb:focus-visible{outline:none;background:var(--card)}
-.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl{display:flex;align-items:center;gap:14px;text-wrap:balance}
 .fb .lbl svg{width:30px;height:30px;flex:none;color:#1877f2}
 .arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(19,36,58,.07);color:var(--ink);transition:background-color .2s,color .2s}
 .arrow svg{width:18px;height:18px}
@@ -150,15 +152,16 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
 .chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--paper);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
-.chips input:focus-visible+label{border-color:var(--focus);outline:none}
+.chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}
 .chips input:checked+label{background:var(--ink);color:#fff}
 .err{display:none;font-size:15px;color:var(--error)}
 .field.bad .err{display:block}
-.field.bad input,.field.bad textarea{border-color:var(--error)}
+.field.bad input[type=text],.field.bad textarea,.field.bad input[type=text]:hover,.field.bad textarea:hover{border-color:var(--error)}
 form .btn-primary{width:100%}
-form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+form .btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 .after{font-size:15px;color:var(--soft)}
-.sent{color:var(--ink);font-weight:600}
+.sent{display:grid;gap:10px;color:var(--ink);font-weight:600}
+.sent textarea{min-height:96px;font-weight:400}
 .sent a{white-space:nowrap;font-variant-numeric:tabular-nums;display:inline-block;padding:11px 0;margin:-11px 0}
 @media (max-width:380px){.chips label{padding:0 14px}}
 
@@ -216,8 +219,8 @@ form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2p
 .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
 .fb:hover .arrow,.row:hover .arrow{background:var(--pine);color:var(--ink)}
 input[type=text]:hover,textarea:hover{border-color:var(--focus)}
-.chips label:hover{border-color:var(--focus)}
-form .btn-primary:hover{outline:2px solid var(--focus);outline-offset:2px}
+.chips label:hover{outline:3px solid var(--focus);outline-offset:2px}
+form .btn-primary:hover{outline:3px solid var(--focus);outline-offset:3px}
 .sent a:hover{color:var(--navy)}
 .bigtel:hover{color:var(--pine)}
 .foot a:hover{color:var(--pine)}
@@ -227,6 +230,7 @@ form .btn-primary:hover{outline:2px solid var(--focus);outline-offset:2px}
   .js .rise,.float,.btn,.arrow{transition:none}
   .js .rise.below{opacity:1;transform:none}
   .hero h1 .c{animation:none;opacity:1;transform:none}
+  .hero h1.wait{opacity:1}
 }
 </style>
 </head>
@@ -267,14 +271,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-paper work" aria-labelledby="h-work">
   <div class="wrap">
     <div class="rise">
-      <h2 id="h-work">Built new, <span class="accent">from the posts up.</span></h2>
+      <h2 id="h-work">Built new, from the posts up.</h2>
       <blockquote class="said">“Horizontal pressure treated fencing installed. All new posts and new gate installed as well customer loved the outcome!!”
-        <footer>Anthony, on Facebook</footer>
+        <footer>From my Facebook post</footer>
       </blockquote>
     </div>
     <div class="proof rise">
       <figure class="shot">
-        <img src="fence.webp" width="800" height="1000" loading="lazy" decoding="async" alt="A new horizontal pressure-treated pine fence along a side yard, boards tight and level on new posts.">
+        <img src="fence.webp" srcset="fence-640.webp 640w, fence.webp 1080w" sizes="(min-width:1024px) 520px, calc(100vw - 40px)" width="1080" height="1350" loading="lazy" decoding="async" alt="A new horizontal pressure-treated pine fence along a side yard, boards tight and level on new posts.">
         <figcaption>Horizontal pine fence</figcaption>
       </figure>
       <a class="fb" href="https://www.facebook.com/profile.php?id=100000287224382" rel="noopener">
@@ -310,7 +314,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <ol class="steps">
       <li class="rise"><div><b>Call or text me.</b><span>Tell me what you need, big or small.</span></div></li>
       <li class="rise"><div><b>Send a photo.</b><span>The old fence, the gate, or the bare yard.</span></div></li>
-      <li class="rise"><div><b>Get your free estimate.</b><span>It costs nothing to ask.</span></div></li>
+      <li class="rise"><div><b>Get your free estimate.</b><span>Based on your photo and what you tell me.</span></div></li>
     </ol>
   </div>
 </section>
@@ -318,8 +322,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-paper ask" id="ask" aria-labelledby="h-ask">
   <div class="wrap">
     <div class="head rise">
-      <span class="eyebrow">Free estimate</span>
-      <h2 id="h-ask">Tell me about your yard</h2>
+      <span class="eyebrow">Text me a photo</span>
+      <h2 id="h-ask">Tell me about the job</h2>
       <p class="lede">A photo of the spot helps me give you a real number.</p>
     </div>
     <form id="quoteForm" class="rise" novalidate>
@@ -334,20 +338,23 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </fieldset>
       <div class="field" id="f-name">
         <label for="name">Your name</label>
-        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
+        <input type="text" id="name" name="name" autocomplete="name" autocapitalize="words" enterkeyhint="next" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
         <p class="err" id="e-name">Add your name so I know who's texting.</p>
       </div>
       <div class="field" id="f-town">
         <label for="town">Your town</label>
-        <input type="text" id="town" name="town" autocomplete="address-level2" maxlength="60" placeholder="e.g. Collingswood" aria-describedby="e-town">
+        <input type="text" id="town" name="town" autocomplete="address-level2" autocapitalize="words" enterkeyhint="next" maxlength="60" placeholder="Town or neighborhood" aria-describedby="e-town">
         <p class="err" id="e-town">Add your town so I know where the job is.</p>
       </div>
       <div class="field">
         <label for="what">Anything else? <small>(optional)</small></label>
-        <textarea id="what" name="what" maxlength="600" placeholder="How long, how tall, old fence coming out…"></textarea>
+        <textarea id="what" name="what" enterkeyhint="send" maxlength="600" placeholder="How long, how tall, old fence coming out…"></textarea>
       </div>
       <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Anthony</button>
-      <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call or text me at <a href="tel:+12672078015">267-207-8015</a>.</p>
+      <div class="sent" id="sent" role="status" hidden>
+        <p>Didn't open your messages? <a id="sentOpen" href="sms:+12672078015">Open in Messages</a>, or send this to <span class="nw">267-207-8015</span>:</p>
+        <textarea id="sentMsg" readonly aria-label="Your message to Anthony"></textarea>
+      </div>
       <p class="after">Opens your messages with this written out. Add a photo before you send.</p>
     </form>
   </div>
@@ -380,7 +387,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 /* ===== Config ===== */
 var CONFIG = {
   PHONE: '+12672078015',
-  FLOAT: true  // the floating text circle; false removes it
+  FLOAT: true,        // the floating text circle; false removes it
+  H1_FONT_WAIT: 700   // ms the hero H1 waits for Cal Sans before bouncing in anyway
 };
 document.documentElement.classList.add('js');
 
@@ -388,14 +396,30 @@ document.documentElement.classList.add('js');
 (function(){
   var h=document.getElementById('h1');
   if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  var plain=h.innerHTML,i=0,last=null;
+  var plain=h.innerHTML,i=0,last=null,wi=0,tops=[],started=false;
+  // wait (briefly, hidden) for Cal Sans so the line breaks are measured in the real face
+  h.classList.add('wait');
+  setTimeout(start,CONFIG.H1_FONT_WAIT);
+  (function poll(){
+    // the font stylesheet loads async, so its @font-face only exists once it arrives
+    if(!document.fonts||!document.fonts.load)return start();
+    var has=false;document.fonts.forEach(function(f){if(f.family.replace(/["']/g,'')==='Cal Sans')has=true});
+    if(has)document.fonts.load('1em "Cal Sans"').then(start,start);else if(!started)setTimeout(poll,40);
+  })();
+  function start(){
+  if(started)return;started=true;
   h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  // note which line each word sits on in the plain heading; letters lose kerning, so the split copy would wrap differently
+  var tw=document.createTreeWalker(h,NodeFilter.SHOW_TEXT),t,rg=document.createRange();
+  while((t=tw.nextNode())){var re=/\S+/g,m;while((m=re.exec(t.textContent))){rg.setStart(t,m.index);rg.setEnd(t,m.index+m[0].length);tops.push(Math.round(rg.getClientRects()[0].top))}}
   function split(node,into){
     [].slice.call(node.childNodes).forEach(function(n){
       if(n.nodeType===3){
         n.textContent.split(/(\s+)/).forEach(function(part){
           if(!part)return;
           if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          if(wi>0&&tops[wi]!==tops[wi-1]){if(into.lastChild&&into.lastChild.nodeType===3)into.removeChild(into.lastChild);into.appendChild(document.createElement('br'))}
+          wi++;
           var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
           for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
           into.appendChild(w);
@@ -403,9 +427,10 @@ document.documentElement.classList.add('js');
       }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
     });
   }
-  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);h.style.whiteSpace='nowrap';h.classList.remove('wait');
   // once the last letter lands, put the plain heading back so kerning and text selection return
-  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label');h.style.whiteSpace=''});
+  }
 })();
 
 /* ===== Service rows: pre-select the matching job in the form ===== */
@@ -413,8 +438,9 @@ document.documentElement.classList.add('js');
   [].forEach.call(document.querySelectorAll('.row[data-job]'),function(a){
     a.addEventListener('click',function(){
       var r=document.querySelector('input[name=job][value="'+a.getAttribute('data-job')+'"]');if(r)r.checked=true;
-      var what=document.getElementById('what'),w=a.getAttribute('data-what');
-      if(w&&!what.value.trim())what.value=w+': ';
+      // fill the job note, replacing an earlier row's note if the visitor hasn't typed over it
+      var what=document.getElementById('what'),w=a.getAttribute('data-what'),cur=what.value;
+      if(!cur.trim()||cur===what.dataset.pre){what.value=w?w+': ':'';what.dataset.pre=what.value}
     });
   });
 })();
@@ -427,7 +453,7 @@ document.documentElement.classList.add('js');
   form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim())f.classList.remove('bad')});
   form.addEventListener('submit',function(e){
     e.preventDefault();
-    var name=val('name'),town=val('town'),what=val('what'),j=form.querySelector('input[name=job]:checked');
+    var name=val('name'),town=val('town'),what=val('what').replace(/:\s*$/,''),j=form.querySelector('input[name=job]:checked');
     mark('f-name',!name);mark('f-town',!town);
     if(!name){document.getElementById('name').focus();return}
     if(!town){document.getElementById('town').focus();return}
@@ -436,7 +462,9 @@ document.documentElement.classList.add('js');
     msg+=' Town: '+town+'.';
     if(what)msg+=' '+what+(/[.!?]$/.test(what)?'':'.');
     msg+=' I\'ll send a photo of the spot.';
-    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    var href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    document.getElementById('sentMsg').value=msg;document.getElementById('sentOpen').href=href;
+    location.href=href;
     // if no messages app opened (desktop, some in-app browsers), say what to do instead
     setTimeout(function(){document.getElementById('sent').hidden=false},900);
   });
